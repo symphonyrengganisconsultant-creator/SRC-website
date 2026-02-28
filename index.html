@@ -1031,39 +1031,5 @@
 <a href="https://wa.me/6282131055498" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50">
     <i class="fab fa-whatsapp text-white text-2xl"></i>
 </a>
-    <script>
-    // Handle Formspree response
-    window.addEventListener("DOMContentLoaded", function() {
-        const form = document.querySelector("form[action*='formspree']");
-        const successMsg = document.getElementById("formSuccess");
-        
-        if (form) {
-            form.addEventListener("submit", function(e) {
-                e.preventDefault();
-                const data = new FormData(form);
-                
-                fetch(form.action, {
-                    method: "POST",
-                    body: data,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                }).then(response => {
-                    if (response.ok) {
-                        form.reset();
-                        successMsg.classList.remove("hidden");
-                        setTimeout(() => {
-                            successMsg.classList.add("hidden");
-                        }, 5000);
-                    } else {
-                        alert("Oops! Ada masalah. Silakan coba lagi.");
-                    }
-                }).catch(error => {
-                    alert("Oops! Ada masalah. Silakan coba lagi.");
-                });
-            });
-        }
-    });
-</script>
 </body>
 </html>
