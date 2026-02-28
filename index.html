@@ -284,7 +284,7 @@
                             <div class="text-xs text-gray-400">Berdiri & Legalitas</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-src-gold">50+</div>
+                            <div class="text-3xl font-bold text-src-gold">25+</div>
                             <div class="text-xs text-gray-400">Proyek Selesai</div>
                         </div>
                         <div class="text-center">
@@ -491,19 +491,19 @@
             <!-- Stats -->
             <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-12">
                 <div class="text-center scroll-reveal">
-                    <div class="text-4xl font-bold text-src-gold mb-2">50+</div>
+                    <div class="text-4xl font-bold text-src-gold mb-2">30+</div>
                     <div class="text-gray-400 text-sm">Proyek Selesai</div>
                 </div>
                 <div class="text-center scroll-reveal">
-                    <div class="text-4xl font-bold text-src-gold mb-2">30+</div>
+                    <div class="text-4xl font-bold text-src-gold mb-2">10+</div>
                     <div class="text-gray-400 text-sm">Klien Puas</div>
                 </div>
                 <div class="text-center scroll-reveal">
-                    <div class="text-4xl font-bold text-src-gold mb-2">10+</div>
+                    <div class="text-4xl font-bold text-src-gold mb-2">1+</div>
                     <div class="text-gray-400 text-sm">Tahun Pengalaman</div>
                 </div>
                 <div class="text-center scroll-reveal">
-                    <div class="text-4xl font-bold text-src-gold mb-2">15+</div>
+                    <div class="text-4xl font-bold text-src-gold mb-2">10+</div>
                     <div class="text-gray-400 text-sm">Mitra Strategis</div>
                 </div>
             </div>
@@ -1220,9 +1220,41 @@
             });
         });
     </script>
-    <!-- Floating WhatsApp Button -->
-<a href="https://wa.me/6282131055498" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50">
-    <i class="fab fa-whatsapp text-white text-2xl"></i>
-</a>
+<!-- Floating WhatsApp Button with Bubble -->
+<div class="fixed bottom-6 right-6 z-50 flex items-end flex-col gap-2">
+    
+    <!-- Bubble Chat -->
+    <div class="bg-white rounded-2xl rounded-br-none shadow-lg px-4 py-3 mb-2 animate-bounce-slow border border-gray-100 max-w-[200px]">
+        <p class="text-sm font-bold text-src-dark">
+            <i class="fab fa-whatsapp text-green-500 mr-1"></i>
+            Free Konsultasi!
+        </p>
+        <p class="text-xs text-gray-500 mt-1">Chat dengan tim kami</p>
+        <!-- Triangle pointer -->
+        <div class="absolute -bottom-2 right-4 w-4 h-4 bg-white border-b border-r border-gray-100 transform rotate-45"></div>
+    </div>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6282131055498" target="_blank" 
+       class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 relative">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+        <!-- Notification dot -->
+        <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold animate-pulse">
+            1
+        </span>
+    </a>
+    
+</div>
+
+<!-- CSS Animation -->
+<style>
+    @keyframes bounce-slow {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+    .animate-bounce-slow {
+        animation: bounce-slow 2s infinite;
+    }
+</style>
 </body>
 </html>
