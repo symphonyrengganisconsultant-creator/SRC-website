@@ -533,10 +533,10 @@
             <!-- Associate 1 - Farhan -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('farhan')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative">
-                    <img src="https://drive.google.com/uc?export=view&id=1PBUXSosYs7BU5MyUtPlr1kc6EadNx6AC" 
+                    <img src="https://i.postimg.cc/SKXdJnC2/Farhan-Aqil-jpg.jpg" 
                          alt="Farhan" 
                          class="w-full h-full object-cover object-center"
-                         onerror="handleImageError(this, 'FA')">
+                         onerror="handleImageError(this)">
                     <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         FA
                     </div>
@@ -551,10 +551,10 @@
             <!-- Associate 2 - Agus -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('agus')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative">
-                    <img src="https://drive.google.com/uc?export=view&id=1Eoc1pcbzrj03v5CuRtpIVaR_VKp3UYK1" 
+                    <img src="https://i.postimg.cc/W3LGzX2v/agus.jpg" 
                          alt="Agus" 
                          class="w-full h-full object-cover object-center"
-                         onerror="handleImageError(this, 'AR')">
+                         onerror="handleImageError(this)">
                     <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         AR
                     </div>
@@ -569,10 +569,10 @@
             <!-- Associate 3 - Anton -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('anton')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative">
-                    <img src="https://drive.google.com/uc?export=view&id=1uodzZ8bXIRuDmdeYIW9rJm22xLDiaL5m" 
+                    <img src="https://i.postimg.cc/9fT96Zyk/anton.jpg" 
                          alt="Anton" 
                          class="w-full h-full object-cover object-center"
-                         onerror="handleImageError(this, 'AS')">
+                         onerror="handleImageError(this)">
                     <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         AS
                     </div>
@@ -587,10 +587,10 @@
             <!-- Associate 4 - Fikri -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('fikri')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative">
-                    <img src="https://drive.google.com/uc?export=view&id=1p3s9-UQyfQlXWIdEkSqfuOKXsbGiep7q" 
+                    <img src="https://i.postimg.cc/XJkCJWHk/fikri.jpg" 
                          alt="Fikri" 
                          class="w-full h-full object-cover object-center"
-                         onerror="handleImageError(this, 'FM')">
+                         onerror="handleImageError(this)">
                     <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         FM
                     </div>
@@ -617,10 +617,10 @@
             <!-- Associate 6 - Juldan -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('juld')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative">
-                    <img src="https://drive.google.com/uc?export=view&id=1KArMeJPJ3ef92puKfQGC6fyOChOTXaor" 
+                    <img src="https://i.postimg.cc/mkd1YwGC/juldan.png" 
                          alt="Juldan" 
                          class="w-full h-full object-cover object-center"
-                         onerror="handleImageError(this, 'JP')">
+                         onerror="handleImageError(this)">
                     <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         JP
                     </div>
@@ -649,25 +649,18 @@
         <!-- Popup Modal -->
         <div id="profileModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 p-4 backdrop-blur-sm">
             <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
-                
-                <!-- Close Button -->
                 <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 transition-colors z-10">
                     <i class="fas fa-times text-xl"></i>
                 </button>
-                
-                <!-- Content -->
-                <div id="modalContent" class="p-8">
-                    <!-- Content by JavaScript -->
-                </div>
+                <div id="modalContent" class="p-8"></div>
             </div>
         </div>
 
         <!-- JavaScript -->
         <script>
-            // Fungsi untuk handle error gambar di halaman awal
-            function handleImageError(img, initials) {
+            // Fungsi sederhana untuk hide gambar error, show fallback
+            function handleImageError(img) {
                 img.style.display = 'none';
-                // Fallback sudah visible via CSS
             }
 
             const profiles = {
@@ -677,7 +670,7 @@
                     expertise: ["Manajemen Industri Tekstil", "Supply Chain", "Quality Control"],
                     education: "Magister Rekayasa Tekstil dan Apparel - Sekolah Tinggi Teknik Tekstil",
                     projects: ["Konsultasi BUMD Tekstil Jawa Barat", "Audit Manufaktur Garment"],
-                    photo: "https://drive.google.com/uc?export=view&id=1PBUXSosYs7BU5MyUtPlr1kc6EadNx6AC",
+                    photo: "https://i.postimg.cc/SKXdJnC2/Farhan-Aqil-jpg.jpg",
                     initials: "FA"
                 },
                 agus: {
@@ -686,7 +679,7 @@
                     expertise: ["Ekonomi Pembangunan", "Analisis Kebijakan", "Financial Planning"],
                     education: "Magister Ekonomi Terapan - Universitas Padjajaran",
                     projects: ["Evaluasi Dampak Ekonomi Proyek Infrastruktur", "Kajian Kelayakan Investasi"],
-                    photo: "https://drive.google.com/uc?export=view&id=1Eoc1pcbzrj03v5CuRtpIVaR_VKp3UYK1",
+                    photo: "https://i.postimg.cc/W3LGzX2v/agus.jpg",
                     initials: "AR"
                 },
                 anton: {
@@ -695,7 +688,7 @@
                     expertise: ["Public Relations", "Media Strategy", "Crisis Communication"],
                     education: "Doktor Ilmu Komunikasi - Universitas Padjajaran",
                     projects: ["Strategi Komunikasi Pemerintah Daerah", "Media Training untuk BUMN"],
-                    photo: "https://drive.google.com/uc?export=view&id=1uodzZ8bXIRuDmdeYIW9rJm22xLDiaL5m",
+                    photo: "https://i.postimg.cc/9fT96Zyk/anton.jpg",
                     initials: "AS"
                 },
                 fikri: {
@@ -704,7 +697,7 @@
                     expertise: ["Analisis Kebijakan Publik", "Political Strategy", "Stakeholder Mapping"],
                     education: "Magister Ilmu Politik - Universitas Padjajaran",
                     projects: ["Kajian Kebijakan Perdagangan", "Advokasi Kepentingan Pelaku Usaha"],
-                    photo: "https://drive.google.com/uc?export=view&id=1p3s9-UQyfQlXWIdEkSqfuOKXsbGiep7q",
+                    photo: "https://i.postimg.cc/XJkCJWHk/fikri.jpg",
                     initials: "FM"
                 },
                 fifih: {
@@ -722,7 +715,7 @@
                     expertise: ["Brand Strategy", "Digital Campaign", "Visual Communication"],
                     education: "Sarjana Desain - Institut Teknologi Nasional",
                     projects: ["Rebranding BUMD", "Social Media Strategy Pemerintah Kota"],
-                    photo: "https://drive.google.com/uc?export=view&id=1KArMeJPJ3ef92puKfQGC6fyOChOTXaor",
+                    photo: "https://i.postimg.cc/mkd1YwGC/juldan.png",
                     initials: "JP"
                 },
                 nadya: {
@@ -763,12 +756,10 @@
                     `;
                 }
 
-                // Generate expertise tags
                 const expertiseTags = profile.expertise.map(exp => 
                     `<span class="px-3 py-1 bg-src-gold/10 text-src-gold rounded-full text-sm font-medium">${exp}</span>`
                 ).join('');
 
-                // Generate projects list
                 const projectsList = profile.projects.map(proj => 
                     `<li class="flex items-start mb-2"><i class="fas fa-check-circle text-src-gold mt-1 mr-2"></i><span class="text-gray-600">${proj}</span></li>`
                 ).join('');
@@ -810,22 +801,17 @@
                 document.body.style.overflow = 'auto';
             }
 
-            // Close modal when clicking outside
             document.getElementById('profileModal').addEventListener('click', function(e) {
-                if (e.target === this) {
-                    closeModal();
-                }
+                if (e.target === this) closeModal();
             });
 
-            // Close modal with Escape key
             document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    closeModal();
-                }
+                if (e.key === 'Escape') closeModal();
             });
         </script>
     </div>
 </section>
+    
 <!-- Customer Segments Section -->
 <section id="clients" class="py-20 sm:py-32 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
