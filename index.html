@@ -510,7 +510,7 @@
         </div>
     </section>
 
-   <!-- Our Associate Section -->
+<!-- Our Associate Section -->
 <section id="team" class="py-20 sm:py-32 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -536,8 +536,8 @@
                     <img src="https://drive.google.com/uc?export=view&id=1PBUXSosYs7BU5MyUtPlr1kc6EadNx6AC" 
                          alt="Farhan" 
                          class="w-full h-full object-cover object-center"
-                         onerror="this.onerror=null; this.style.display='none'; this.parentElement.querySelector('.fallback').style.display='flex';">
-                    <div class="fallback hidden absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
+                         onerror="handleImageError(this, 'FA')">
+                    <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         FA
                     </div>
                 </div>
@@ -554,8 +554,8 @@
                     <img src="https://drive.google.com/uc?export=view&id=1Eoc1pcbzrj03v5CuRtpIVaR_VKp3UYK1" 
                          alt="Agus" 
                          class="w-full h-full object-cover object-center"
-                         onerror="this.onerror=null; this.style.display='none'; this.parentElement.querySelector('.fallback').style.display='flex';">
-                    <div class="fallback hidden absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
+                         onerror="handleImageError(this, 'AR')">
+                    <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         AR
                     </div>
                 </div>
@@ -572,8 +572,8 @@
                     <img src="https://drive.google.com/uc?export=view&id=1uodzZ8bXIRuDmdeYIW9rJm22xLDiaL5m" 
                          alt="Anton" 
                          class="w-full h-full object-cover object-center"
-                         onerror="this.onerror=null; this.style.display='none'; this.parentElement.querySelector('.fallback').style.display='flex';">
-                    <div class="fallback hidden absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
+                         onerror="handleImageError(this, 'AS')">
+                    <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         AS
                     </div>
                 </div>
@@ -590,8 +590,8 @@
                     <img src="https://drive.google.com/uc?export=view&id=1p3s9-UQyfQlXWIdEkSqfuOKXsbGiep7q" 
                          alt="Fikri" 
                          class="w-full h-full object-cover object-center"
-                         onerror="this.onerror=null; this.style.display='none'; this.parentElement.querySelector('.fallback').style.display='flex';">
-                    <div class="fallback hidden absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
+                         onerror="handleImageError(this, 'FM')">
+                    <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         FM
                     </div>
                 </div>
@@ -620,8 +620,8 @@
                     <img src="https://drive.google.com/uc?export=view&id=1KArMeJPJ3ef92puKfQGC6fyOChOTXaor" 
                          alt="Juldan" 
                          class="w-full h-full object-cover object-center"
-                         onerror="this.onerror=null; this.style.display='none'; this.parentElement.querySelector('.fallback').style.display='flex';">
-                    <div class="fallback hidden absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
+                         onerror="handleImageError(this, 'JP')">
+                    <div class="fallback absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl">
                         JP
                     </div>
                 </div>
@@ -664,6 +664,12 @@
 
         <!-- JavaScript -->
         <script>
+            // Fungsi untuk handle error gambar di halaman awal
+            function handleImageError(img, initials) {
+                img.style.display = 'none';
+                // Fallback sudah visible via CSS
+            }
+
             const profiles = {
                 farhan: {
                     name: "A. Farhan Aqil Syauqi Pradanta",
@@ -671,7 +677,8 @@
                     expertise: ["Manajemen Industri Tekstil", "Supply Chain", "Quality Control"],
                     education: "Magister Rekayasa Tekstil dan Apparel - Sekolah Tinggi Teknik Tekstil",
                     projects: ["Konsultasi BUMD Tekstil Jawa Barat", "Audit Manufaktur Garment"],
-                    photo: "https://drive.google.com/uc?export=view&id=1PBUXSosYs7BU5MyUtPlr1kc6EadNx6AC"
+                    photo: "https://drive.google.com/uc?export=view&id=1PBUXSosYs7BU5MyUtPlr1kc6EadNx6AC",
+                    initials: "FA"
                 },
                 agus: {
                     name: "Agus Riyanto",
@@ -679,7 +686,8 @@
                     expertise: ["Ekonomi Pembangunan", "Analisis Kebijakan", "Financial Planning"],
                     education: "Magister Ekonomi Terapan - Universitas Padjajaran",
                     projects: ["Evaluasi Dampak Ekonomi Proyek Infrastruktur", "Kajian Kelayakan Investasi"],
-                    photo: "https://drive.google.com/uc?export=view&id=1Eoc1pcbzrj03v5CuRtpIVaR_VKp3UYK1"
+                    photo: "https://drive.google.com/uc?export=view&id=1Eoc1pcbzrj03v5CuRtpIVaR_VKp3UYK1",
+                    initials: "AR"
                 },
                 anton: {
                     name: "Anton Sulaiman",
@@ -687,7 +695,8 @@
                     expertise: ["Public Relations", "Media Strategy", "Crisis Communication"],
                     education: "Doktor Ilmu Komunikasi - Universitas Padjajaran",
                     projects: ["Strategi Komunikasi Pemerintah Daerah", "Media Training untuk BUMN"],
-                    photo: "https://drive.google.com/uc?export=view&id=1uodzZ8bXIRuDmdeYIW9rJm22xLDiaL5m"
+                    photo: "https://drive.google.com/uc?export=view&id=1uodzZ8bXIRuDmdeYIW9rJm22xLDiaL5m",
+                    initials: "AS"
                 },
                 fikri: {
                     name: "Fikri Maulana",
@@ -695,7 +704,8 @@
                     expertise: ["Analisis Kebijakan Publik", "Political Strategy", "Stakeholder Mapping"],
                     education: "Magister Ilmu Politik - Universitas Padjajaran",
                     projects: ["Kajian Kebijakan Perdagangan", "Advokasi Kepentingan Pelaku Usaha"],
-                    photo: "https://drive.google.com/uc?export=view&id=1p3s9-UQyfQlXWIdEkSqfuOKXsbGiep7q"
+                    photo: "https://drive.google.com/uc?export=view&id=1p3s9-UQyfQlXWIdEkSqfuOKXsbGiep7q",
+                    initials: "FM"
                 },
                 fifih: {
                     name: "Fifih Roffiqoh",
@@ -703,7 +713,8 @@
                     expertise: ["Community Development", "Social Impact Assessment", "CSR Strategy"],
                     education: "Magister Terapan Sosial - Sekolah Tinggi Kesejahteraan Sosial",
                     projects: ["Pengembangan Masyarakat Sekitar Proyek", "Assessment Dampak Sosial"],
-                    photo: ""
+                    photo: "",
+                    initials: "FR"
                 },
                 juld: {
                     name: "Juldan Prabowo",
@@ -711,7 +722,8 @@
                     expertise: ["Brand Strategy", "Digital Campaign", "Visual Communication"],
                     education: "Sarjana Desain - Institut Teknologi Nasional",
                     projects: ["Rebranding BUMD", "Social Media Strategy Pemerintah Kota"],
-                    photo: "https://drive.google.com/uc?export=view&id=1KArMeJPJ3ef92puKfQGC6fyOChOTXaor"
+                    photo: "https://drive.google.com/uc?export=view&id=1KArMeJPJ3ef92puKfQGC6fyOChOTXaor",
+                    initials: "JP"
                 },
                 nadya: {
                     name: "Nadya D. Prasetyo",
@@ -719,7 +731,8 @@
                     expertise: ["Hukum Bisnis", "Kontrak Komersial", "Legal Compliance", "Due Diligence"],
                     education: "Magister Ilmu Hukum & Advokat - Universitas Brawijaya",
                     projects: ["Legal Due Diligence Proyek Infrastruktur", "Drafting Kontrak BUMD", "Konsultasi Hukum Korporasi"],
-                    photo: ""
+                    photo: "",
+                    initials: "NP"
                 }
             };
 
@@ -728,19 +741,24 @@
                 const modal = document.getElementById('profileModal');
                 const content = document.getElementById('modalContent');
                 
-                // Generate photo section
+                // Generate photo section dengan error handling
                 let photoSection = '';
                 if (profile.photo) {
                     photoSection = `
-                        <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-src-gold shadow-lg">
-                            <img src="${profile.photo}" alt="${profile.name}" class="w-full h-full object-cover">
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-src-gold shadow-lg relative bg-gray-100">
+                            <img src="${profile.photo}" 
+                                 alt="${profile.name}" 
+                                 class="w-full h-full object-cover"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-4xl" style="display: none;">
+                                ${profile.initials}
+                            </div>
                         </div>
                     `;
                 } else {
-                    const initials = profile.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
                     photoSection = `
                         <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-4xl border-4 border-white shadow-lg">
-                            ${initials}
+                            ${profile.initials}
                         </div>
                     `;
                 }
@@ -808,7 +826,6 @@
         </script>
     </div>
 </section>
-
 <!-- Customer Segments Section -->
 <section id="clients" class="py-20 sm:py-32 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
