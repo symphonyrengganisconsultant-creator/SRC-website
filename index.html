@@ -510,10 +510,11 @@
         </div>
     </section>
 
-    <!-- Our Associate Section -->
-<!-- Our Associate Section -->
+   <!-- Our Associate Section -->
 <section id="team" class="py-20 sm:py-32 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
         <div class="text-center mb-16 scroll-reveal">
             <div class="inline-block px-4 py-2 bg-src-gold/10 rounded-full mb-4">
                 <span class="text-src-gold font-semibold text-sm tracking-wider">TIM KAMI</span>
@@ -526,6 +527,7 @@
             </p>
         </div>
 
+        <!-- Grid Associates -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             
             <!-- Associate 1 - Farhan -->
@@ -545,7 +547,7 @@
                     <i class="fas fa-eye mr-1"></i> Lihat Profil
                 </div>
             </div>
-            
+
             <!-- Associate 2 - Agus -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('agus')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative">
@@ -563,7 +565,7 @@
                     <i class="fas fa-eye mr-1"></i> Lihat Profil
                 </div>
             </div>
-            
+
             <!-- Associate 3 - Anton -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('anton')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative">
@@ -581,7 +583,7 @@
                     <i class="fas fa-eye mr-1"></i> Lihat Profil
                 </div>
             </div>
-            
+
             <!-- Associate 4 - Fikri -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('fikri')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative">
@@ -599,8 +601,8 @@
                     <i class="fas fa-eye mr-1"></i> Lihat Profil
                 </div>
             </div>
-            
-            <!-- Associate 5 - Fifih (Inisial saja) -->
+
+            <!-- Associate 5 - Fifih (Inisial Saja) -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('fifih')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl border-4 border-white shadow-lg hover:scale-110 transition-transform">
                     FR
@@ -611,7 +613,7 @@
                     <i class="fas fa-eye mr-1"></i> Lihat Profil
                 </div>
             </div>
-            
+
             <!-- Associate 6 - Juldan -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('juld')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative">
@@ -629,8 +631,8 @@
                     <i class="fas fa-eye mr-1"></i> Lihat Profil
                 </div>
             </div>
-            
-            <!-- Associate 7 - Nadya (Inisial saja) -->
+
+            <!-- Associate 7 - Nadya (Inisial Saja) -->
             <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('nadya')">
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl border-4 border-white shadow-lg hover:scale-110 transition-transform">
                     NP
@@ -641,158 +643,171 @@
                     <i class="fas fa-eye mr-1"></i> Lihat Profil
                 </div>
             </div>
-            
-    <!-- Modal Popup -->
-    <div id="profileModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-4">
-        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative animate-fade-in">
-            <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 transition-colors">
-                <i class="fas fa-times text-xl"></i>
-            </button>
-            
-            <div id="modalContent" class="p-8">
-                <!-- Content will be inserted here by JavaScript -->
+
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="profileModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 p-4 backdrop-blur-sm">
+            <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
+                
+                <!-- Close Button -->
+                <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 transition-colors z-10">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+                
+                <!-- Content -->
+                <div id="modalContent" class="p-8">
+                    <!-- Content by JavaScript -->
+                </div>
             </div>
         </div>
-    </div>
 
-    <script>
-       <script>
-    const profiles = {
-        farhan: {
-            name: "A. Farhan Aqil Syauqi Pradanta",
-            title: "Magister Rekayasa Tekstil dan Apparel",
-            expertise: ["Manajemen Industri Tekstil", "Supply Chain", "Quality Control"],
-            education: "Magister Rekayasa Tekstil dan Apparel - Sekolah Tinggi Teknik Tekstil",
-            projects: ["Konsultasi BUMD Tekstil Jawa Barat", "Audit Manufaktur Garment"],
-            photo: "https://drive.google.com/uc?export=view&id=1PBUXSosYs7BU5MyUtPlr1kc6EadNx6AC"
-        },
-        agus: {
-            name: "Agus Riyanto",
-            title: "Magister Ekonomi Terapan",
-            expertise: ["Ekonomi Pembangunan", "Analisis Kebijakan", "Financial Planning"],
-            education: "Magister Ekonomi Terapan - Universitas padjajaran",
-            projects: ["Evaluasi Dampak Ekonomi Proyek Infrastruktur", "Kajian Kelayakan Investasi"],
-            photo: "https://drive.google.com/uc?export=view&id=1Eoc1pcbzrj03v5CuRtpIVaR_VKp3UYK1"
-        },
-        anton: {
-            name: "Anton Sulaiman",
-            title: "Doktor Ilmu Komunikasi",
-            expertise: ["Public Relations", "Media Strategy", "Crisis Communication"],
-            education: "Doktor Ilmu Komunikasi - Universitas Padjajaran",
-            projects: ["Strategi Komunikasi Pemerintah Daerah", "Media Training untuk BUMN"],
-            photo: "https://drive.google.com/uc?export=view&id=1uodzZ8bXIRuDmdeYIW9rJm22xLDiaL5m"
-        },
-        fikri: {
-            name: "Fikri Maulana",
-            title: "Magister Ilmu Politik",
-            expertise: ["Analisis Kebijakan Publik", "Political Strategy", "Stakeholder Mapping"],
-            education: "Magister Ilmu Politik - Universitas Padjajaran",
-            projects: ["Kajian Kebijakan Perdagangan", "Advokasi Kepentingan Pelaku Usaha"],
-            photo: "https://drive.google.com/uc?export=view&id=1p3s9-UQyfQlXWIdEkSqfuOKXsbGiep7q"
-        },
-        fifih: {
-            name: "Fifih Roffiqoh",
-            title: "Magister Terapan Sosial",
-            expertise: ["Community Development", "Social Impact Assessment", "CSR Strategy"],
-            education: "Magister Terapan Sosial - Sekolah Tinggi Kesejahteraan Sosial",
-            projects: ["Pengembangan Masyarakat Sekitar Proyek", "Assessment Dampak Sosial"],
-            photo: ""  // Inisial saja
-        },
-        juld: {
-            name: "Juldan Prabowo",
-            title: "Digital Marketing & Graphic Designer",
-            expertise: ["Brand Strategy", "Digital Campaign", "Visual Communication"],
-            education: "Sarjana Desain - Institut Teknologi Nasional",
-            projects: ["Rebranding BUMD", "Social Media Strategy Pemerintah Kota"],
-            photo: "https://drive.google.com/uc?export=view&id=1KArMeJPJ3ef92puKfQGC6fyOChOTXaor"
-        },
-        nadya: {
-            name: "Nadya D. Prasetyo",
-            title: "Magister Ilmu Hukum & Advokat",
-            expertise: ["Hukum Bisnis", "Regulatory Compliance", "Contract Drafting"],
-            education: "Magister Ilmu Hukum - Universitas Brawijaya",
-            projects: ["Review Peraturan Daerah", "Legal Due Diligence Proyek PPP"],
-            photo: ""  // Inisial saja
-        }
-    };
+        <!-- JavaScript -->
+        <script>
+            const profiles = {
+                farhan: {
+                    name: "A. Farhan Aqil Syauqi Pradanta",
+                    title: "Magister Rekayasa Tekstil dan Apparel",
+                    expertise: ["Manajemen Industri Tekstil", "Supply Chain", "Quality Control"],
+                    education: "Magister Rekayasa Tekstil dan Apparel - Sekolah Tinggi Teknik Tekstil",
+                    projects: ["Konsultasi BUMD Tekstil Jawa Barat", "Audit Manufaktur Garment"],
+                    photo: "https://drive.google.com/uc?export=view&id=1PBUXSosYs7BU5MyUtPlr1kc6EadNx6AC"
+                },
+                agus: {
+                    name: "Agus Riyanto",
+                    title: "Magister Ekonomi Terapan",
+                    expertise: ["Ekonomi Pembangunan", "Analisis Kebijakan", "Financial Planning"],
+                    education: "Magister Ekonomi Terapan - Universitas Padjajaran",
+                    projects: ["Evaluasi Dampak Ekonomi Proyek Infrastruktur", "Kajian Kelayakan Investasi"],
+                    photo: "https://drive.google.com/uc?export=view&id=1Eoc1pcbzrj03v5CuRtpIVaR_VKp3UYK1"
+                },
+                anton: {
+                    name: "Anton Sulaiman",
+                    title: "Doktor Ilmu Komunikasi",
+                    expertise: ["Public Relations", "Media Strategy", "Crisis Communication"],
+                    education: "Doktor Ilmu Komunikasi - Universitas Padjajaran",
+                    projects: ["Strategi Komunikasi Pemerintah Daerah", "Media Training untuk BUMN"],
+                    photo: "https://drive.google.com/uc?export=view&id=1uodzZ8bXIRuDmdeYIW9rJm22xLDiaL5m"
+                },
+                fikri: {
+                    name: "Fikri Maulana",
+                    title: "Magister Ilmu Politik",
+                    expertise: ["Analisis Kebijakan Publik", "Political Strategy", "Stakeholder Mapping"],
+                    education: "Magister Ilmu Politik - Universitas Padjajaran",
+                    projects: ["Kajian Kebijakan Perdagangan", "Advokasi Kepentingan Pelaku Usaha"],
+                    photo: "https://drive.google.com/uc?export=view&id=1p3s9-UQyfQlXWIdEkSqfuOKXsbGiep7q"
+                },
+                fifih: {
+                    name: "Fifih Roffiqoh",
+                    title: "Magister Terapan Sosial",
+                    expertise: ["Community Development", "Social Impact Assessment", "CSR Strategy"],
+                    education: "Magister Terapan Sosial - Sekolah Tinggi Kesejahteraan Sosial",
+                    projects: ["Pengembangan Masyarakat Sekitar Proyek", "Assessment Dampak Sosial"],
+                    photo: ""
+                },
+                juld: {
+                    name: "Juldan Prabowo",
+                    title: "Digital Marketing & Graphic Designer",
+                    expertise: ["Brand Strategy", "Digital Campaign", "Visual Communication"],
+                    education: "Sarjana Desain - Institut Teknologi Nasional",
+                    projects: ["Rebranding BUMD", "Social Media Strategy Pemerintah Kota"],
+                    photo: "https://drive.google.com/uc?export=view&id=1KArMeJPJ3ef92puKfQGC6fyOChOTXaor"
+                },
+                nadya: {
+                    name: "Nadya D. Prasetyo",
+                    title: "Magister Ilmu Hukum & Advokat",
+                    expertise: ["Hukum Bisnis", "Kontrak Komersial", "Legal Compliance", "Due Diligence"],
+                    education: "Magister Ilmu Hukum & Advokat - Universitas Brawijaya",
+                    projects: ["Legal Due Diligence Proyek Infrastruktur", "Drafting Kontrak BUMD", "Konsultasi Hukum Korporasi"],
+                    photo: ""
+                }
+            };
 
-    function openModal(person) {
-        const profile = profiles[person];
-        const modal = document.getElementById('profileModal');
-        const content = document.getElementById('modalContent');
-        
-        const initial = profile.name.split(' ').map(n => n[0]).join('').substring(0,2);
-        
-        content.innerHTML = `
-            <div class="text-center mb-6">
-                <!-- Foto di Popup -->
-                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-xl bg-gray-100 relative">
-                    ${profile.photo ? `
-                        <img src="${profile.photo}" 
-                             alt="${profile.name}" 
-                             class="w-full h-full object-cover object-center"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="hidden absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-3xl">
-                            ${initial}
-                        </div>
-                    ` : `
-                        <div class="absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-3xl">
-                            ${initial}
-                        </div>
-                    `}
-                </div>
+            function openModal(profileId) {
+                const profile = profiles[profileId];
+                const modal = document.getElementById('profileModal');
+                const content = document.getElementById('modalContent');
                 
-                <h2 class="text-2xl font-serif font-bold text-src-dark mb-2">${profile.name}</h2>
-                <p class="text-src-gold font-medium">${profile.title}</p>
-            </div>
-            
-            <div class="space-y-4">
-                <div class="bg-gray-50 rounded-xl p-6">
-                    <h4 class="font-bold text-src-dark mb-3"><i class="fas fa-graduation-cap text-src-gold mr-2"></i>Pendidikan</h4>
-                    <p class="text-gray-600">${profile.education}</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-src-dark mb-4"><i class="fas fa-briefcase text-src-gold mr-2"></i>Keahlian</h4>
-                    <div class="flex flex-wrap gap-2">
-                        ${profile.expertise.map(exp => `<span class="px-3 py-1 bg-src-gold/10 text-src-gold rounded-full text-sm">${exp}</span>`).join('')}
+                // Generate photo section
+                let photoSection = '';
+                if (profile.photo) {
+                    photoSection = `
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-src-gold shadow-lg">
+                            <img src="${profile.photo}" alt="${profile.name}" class="w-full h-full object-cover">
+                        </div>
+                    `;
+                } else {
+                    const initials = profile.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+                    photoSection = `
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-4xl border-4 border-white shadow-lg">
+                            ${initials}
+                        </div>
+                    `;
+                }
+
+                // Generate expertise tags
+                const expertiseTags = profile.expertise.map(exp => 
+                    `<span class="px-3 py-1 bg-src-gold/10 text-src-gold rounded-full text-sm font-medium">${exp}</span>`
+                ).join('');
+
+                // Generate projects list
+                const projectsList = profile.projects.map(proj => 
+                    `<li class="flex items-start mb-2"><i class="fas fa-check-circle text-src-gold mt-1 mr-2"></i><span class="text-gray-600">${proj}</span></li>`
+                ).join('');
+
+                content.innerHTML = `
+                    ${photoSection}
+                    <h3 class="text-2xl font-bold text-src-dark text-center mb-2">${profile.name}</h3>
+                    <p class="text-src-gold text-center font-medium mb-6">${profile.title}</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-src-dark mb-3 flex items-center"><i class="fas fa-graduation-cap mr-2 text-src-gold"></i>Pendidikan</h4>
+                        <p class="text-gray-600 bg-gray-50 p-3 rounded-lg">${profile.education}</p>
                     </div>
-                </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-src-dark mb-3 flex items-center"><i class="fas fa-lightbulb mr-2 text-src-gold"></i>Keahlian</h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${expertiseTags}
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-src-dark mb-3 flex items-center"><i class="fas fa-briefcase mr-2 text-src-gold"></i>Proyek Terkait</h4>
+                        <ul class="text-gray-600">
+                            ${projectsList}
+                        </ul>
+                    </div>
+                `;
                 
-                <div>
-                    <h4 class="font-bold text-src-dark mb-4"><i class="fas fa-project-diagram text-src-gold mr-2"></i>Proyek Terkini</h4>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
-                        ${profile.projects.map(proj => `<li>${proj}</li>`).join('')}
-                    </ul>
-                </div>
-            </div>
-        `;
-        
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-        document.body.style.overflow = 'hidden';
-    }
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
 
-    function closeModal() {
-        const modal = document.getElementById('profileModal');
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-        document.body.style.overflow = 'auto';
-    }
+            function closeModal() {
+                const modal = document.getElementById('profileModal');
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }
 
-    document.addEventListener('click', function(e) {
-        const modal = document.getElementById('profileModal');
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
+            // Close modal when clicking outside
+            document.getElementById('profileModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
 
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            closeModal();
-        }
-    });
-</script>
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        </script>
+    </div>
+</section>
 
 <!-- Customer Segments Section -->
 <section id="clients" class="py-20 sm:py-32 bg-white">
