@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphony Rengganis Consultant | Public Administration & Governance Consulting</title>
+    <meta name="description" content="Symphony Rengganis Consultant (SRC) — konsultan kebijakan publik dan tata kelola pemerintahan di Bandung: pendampingan proyek, fasilitasi & mediasi kebijakan, peningkatan kapasitas, evaluasi kebijakan, serta pengadaan sekolah via SIPLah.">
+    <meta name="keywords" content="konsultan kebijakan publik, konsultan tata kelola, public administration, governance consulting, Bandung, Symphony Rengganis Consultant">
+    <meta name="author" content="PT Symphony Rengganis Konsultan">
+    <meta name="theme-color" content="#1A1A1A">
+    <meta name="google-site-verification" content="r7gFb4rUXaAaKOtazEuXslbHn02kSZFbBbe6i4aJtGo" />
+    <link rel="canonical" href="https://srconsultant.solutions/">
+
+    <!-- Open Graph (tampilan saat link dibagikan di WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Symphony Rengganis Consultant">
+    <meta property="og:title" content="Symphony Rengganis Consultant | Public Administration & Governance Consulting">
+    <meta property="og:description" content="Konsultan kebijakan publik dan tata kelola pemerintahan — menjembatani kebijakan dengan praktik pembangunan nyata.">
+    <meta property="og:url" content="https://srconsultant.solutions/">
+    <meta property="og:image" content="https://srconsultant.solutions/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23D4AF37'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='22' font-weight='700' text-anchor='middle' fill='%231A1A1A'%3ESRC%3C/text%3E%3C/svg%3E">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'src-gold': '#D4AF37',
+                        'src-gold-light': '#F4E8C1',
+                        'src-dark': '#1A1A1A',
+                        'src-gray': '#2D3748',
+                        'src-light': '#F7FAFC'
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E8C1 50%, #D4AF37 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E8C1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+        }
+        .glass-effect {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-gray-800 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-full gradient-gold flex items-center justify-center">
+                        <span class="text-src-dark font-serif font-bold text-xl">SRC</span>
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="text-white font-serif text-lg font-bold leading-tight">SYMPHONY RENGGANIS</h1>
+                        <p class="text-src-gold text-xs tracking-widest">CONSULTANT</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-src-gold transition-colors text-sm font-medium">Beranda</a>
+                    <a href="#about" class="text-gray-300 hover:text-src-gold transition-colors text-sm font-medium">Tentang</a>
+                    <a href="#founder" class="text-gray-300 hover:text-src-gold transition-colors text-sm font-medium">Founder</a>
+                    <a href="#services" class="text-gray-300 hover:text-src-gold transition-colors text-sm font-medium">Layanan</a>
+                    <a href="#team" class="text-gray-300 hover:text-src-gold transition-colors text-sm font-medium">Tim Kami</a>
+                    <a href="#values" class="text-gray-300 hover:text-src-gold transition-colors text-sm font-medium">Nilai</a>
+                    <a href="#siplah" class="text-gray-300 hover:text-src-gold transition-colors text-sm font-medium">SIPLah</a>
+                    <a href="#contact" class="px-6 py-2 gradient-gold text-src-dark font-semibold rounded-full hover:shadow-lg hover:shadow-yellow-500/30 transition-all text-sm">
+                        Hubungi Kami
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()" aria-label="Buka menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-src-dark border-t border-gray-800" id="mobileMenu">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block px-3 py-2 text-gray-300 hover:text-src-gold hover:bg-gray-800 rounded-md">Beranda</a>
+                <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-src-gold hover:bg-gray-800 rounded-md">Tentang</a>
+                <a href="#founder" class="block px-3 py-2 text-gray-300 hover:text-src-gold hover:bg-gray-800 rounded-md">Founder</a>
+                <a href="#services" class="block px-3 py-2 text-gray-300 hover:text-src-gold hover:bg-gray-800 rounded-md">Layanan</a>
+                <a href="#values" class="block px-3 py-2 text-gray-300 hover:text-src-gold hover:bg-gray-800 rounded-md">Nilai</a>
+                <a href="#team" class="block px-3 py-2 text-gray-300 hover:text-src-gold hover:bg-gray-800 rounded-md">Tim Kami</a>
+                <a href="#siplah" class="block px-3 py-2 text-gray-300 hover:text-src-gold hover:bg-gray-800 rounded-md">Pengadaan SIPLah</a>
+                <a href="#contact" class="block px-3 py-2 text-src-gold font-semibold">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-src-dark hero-pattern overflow-hidden pt-20">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-src-gold/10 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-src-gold/5 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-20">
+                <svg viewBox="0 0 100 100" class="w-full h-full" preserveAspectRatio="none">
+                    <path d="M0,50 Q25,30 50,50 T100,50" stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.3"/>
+                    <path d="M0,60 Q25,40 50,60 T100,60" stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.2"/>
+                    <path d="M0,40 Q25,20 50,40 T100,40" stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.2"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="scroll-reveal active">
+                <div class="inline-block mb-6">
+                    <div class="w-24 h-24 mx-auto rounded-full gradient-gold flex items-center justify-center shadow-2xl shadow-yellow-500/20 mb-4">
+                        <span class="text-src-dark font-serif font-bold text-4xl">SRC</span>
+                    </div>
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-white mb-4 leading-tight">
+                    SYMPHONY <span class="text-gradient">RENGGANIS</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-src-gold font-light tracking-widest mb-6">CONSULTANT</p>
+                <p class="max-w-2xl mx-auto text-gray-400 text-lg sm:text-xl mb-10 leading-relaxed px-4">
+                    Menjembatani kebijakan publik dengan praktik pembangunan nyata melalui mediasi kebijakan yang profesional dan berbasis regulasi
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center px-4">
+                    <a href="#services" class="px-8 py-4 gradient-gold text-src-dark font-semibold rounded-full hover:shadow-xl hover:shadow-yellow-500/30 transition-all transform hover:scale-105">
+                        Jelajahi Layanan
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-src-gold text-src-gold font-semibold rounded-full hover:bg-src-gold hover:text-src-dark transition-all">
+                        Konsultasi Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-src-gold text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 sm:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-reveal">
+                    <div class="inline-block px-4 py-2 bg-src-gold/10 rounded-full mb-4">
+                        <span class="text-src-gold font-semibold text-sm tracking-wider">TENTANG KAMI</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-src-dark mb-6 leading-tight">
+                        Membangun Sinergi antara <span class="text-gradient bg-gradient-to-r from-src-gold to-yellow-600 bg-clip-text text-transparent">Kebijakan dan Praktik</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Symphony Rengganis Consultant adalah konsultan administrasi publik yang membantu pemerintah, pelaku usaha, dan masyarakat berjalan selaras melalui mediasi kebijakan yang profesional dan berbasis regulasi.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        Kami berkomitmen mendorong pembangunan yang inklusif, adaptif, dan berkelanjutan dengan pendekatan berbasis data dan regulasi.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="border-l-4 border-src-gold pl-4">
+                            <h4 class="font-bold text-src-dark text-lg">Integritas</h4>
+                            <p class="text-gray-500 text-sm">Standar kejujuran tertinggi</p>
+                        </div>
+                        <div class="border-l-4 border-src-gold pl-4">
+                            <h4 class="font-bold text-src-dark text-lg">Inovasi</h4>
+                            <p class="text-gray-500 text-sm">Solusi mutakhir & kreatif</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-reveal relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-br from-src-gold/20 to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop" alt="Modern Architecture" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700">
+                    </div>
+                   <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-src-gold rounded-full flex items-center justify-center shadow-xl z-20">
+ <i class="fas fa-award text-3xl text-src-dark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Founder & Vision Section -->
+<section id="founder" class="py-20 sm:py-32 bg-src-dark relative overflow-hidden">
+    <div class="absolute inset-0 hero-pattern opacity-30"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-src-gold/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-src-gold/5 rounded-full blur-3xl"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center mb-16 scroll-reveal">
+            <div class="inline-block px-4 py-2 bg-src-gold/10 rounded-full mb-4">
+                <span class="text-src-gold font-semibold text-sm tracking-wider">PENDIRI & VISI</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-4">
+                Membangun <span class="text-gradient">Dunia yang Lebih Baik</span>
+            </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            
+            <div class="scroll-reveal">
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-src-gold/30">
+                        <div class="aspect-[4/5]">
+                            <img src="images/santri-agung.jpg" 
+                                 alt="Mr. Santri Agung" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-src-gold/20 rounded-full blur-2xl"></div>
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-src-gold/10 rounded-full blur-xl"></div>
+                </div>
+                
+                <div class="mt-8 text-center lg:text-left">
+                    <h3 class="text-2xl font-serif font-bold text-white mb-1">Mr. Santri Agung</h3>
+                    <p class="text-src-gold font-medium mb-2">CEO (Chief Executive Officer)</p>
+                    <p class="text-gray-400 text-sm">Founder Symphony Rengganis Consultant</p>
+                    
+                    <div class="flex justify-center lg:justify-start space-x-4 mt-4">
+                        <a href="mailto:santriagung@srconsultant.solutions" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-src-gold hover:text-src-dark transition-all">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-reveal">
+                <div class="space-y-6">
+                    
+                    <div class="border-l-4 border-src-gold pl-6 py-2">
+                        <p class="text-xl sm:text-2xl font-serif text-white italic leading-relaxed">
+                            "Saya percaya bahwa administrasi dan kebijakan publik yang baik adalah fondasi pembangunan bangsa. Melalui Symphony Rengganis, kami berkomitmen menjembatani kebijakan dengan praktik nyata untuk Indonesia yang lebih baik."
+                        </p>
+                    </div>
+
+                    <div class="bg-white/5 rounded-xl p-6 backdrop-blur-sm border border-white/10">
+                        <h4 class="text-lg font-bold text-src-gold mb-3">
+                            <i class="fas fa-history mr-2"></i>Sejarah Pendirian
+                        </h4>
+                        <p class="text-gray-300 leading-relaxed text-sm">
+                            Symphony Rengganis Consultant didirikan dengan visi menjadi BOTLLE NECK dalam menngawal suatu kebijakan dari perencanaan hingga proses implementasi. Berawal dari pengalaman mendalam di sektor pemerintahan dan konsultasi, kami melihat kesenjangan besar antara kebijakan di atas kertas dengan realitas di lapangan.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed text-sm mt-3">
+                            Nama "Rengganis" terinspirasi dari semangat kebersamaan dan harmoni—nilai inti yang kami bawa dalam setiap proyek. Sejak berdiri, kami telah menangani puluhan proyek strategis untuk pemerintah daerah, BUMD, dan sektor swasta.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-src-gold/20 to-transparent rounded-xl p-6 border border-src-gold/30">
+                        <h4 class="text-lg font-bold text-src-gold mb-3">
+                            <i class="fas fa-rocket mr-2"></i>Visi ke Depan
+                        </h4>
+                        <p class="text-gray-300 leading-relaxed text-sm">
+                            Kami bermimpi melihat Indonesia dengan tata kelola pemerintahan yang transparan, efektif, dan berpihak pada rakyat. Symphony Rengganis akan terus berinovasi dalam mediasi kebijakan, memanfaatkan teknologi dan data untuk menciptakan solusi yang berkelanjutan.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed text-sm mt-3">
+                            Target kami: menjadi katalis perubahan dalam 100 proyek pembangunan strategis di seluruh Indonesia pada tahun 2030, menciptakan dampak nyata bagi jutaan masyarakat.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 pt-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-src-gold">2024</div>
+                            <div class="text-xs text-gray-400">Mulai Berkiprah</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-src-gold">25+</div>
+                            <div class="text-xs text-gray-400">Proyek Selesai</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-src-gold">2030</div>
+                            <div class="text-xs text-gray-400">Target 100 Proyek</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-8 backdrop-blur-sm border border-white/10 scroll-reveal">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">
+                        <i class="fas fa-certificate text-src-gold mr-2"></i>
+                        Legalitas Perusahaan
+                    </h4>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between border-b border-white/10 pb-2">
+                            <span class="text-gray-400">Nama Legal</span>
+                            <span class="text-white font-medium">PT Symphony Rengganis Konsultan</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/10 pb-2">
+                            <span class="text-gray-400">Nomor AHU</span>
+                            <span class="text-white font-medium">AHU-010411.AH.01.30.Tahun 2026</span>
+                        </div>
+                        <div class="flex justify-between border-b border-white/10 pb-2">
+                            <span class="text-gray-400">NIB</span>
+                            <span class="text-white font-medium">1802260110064</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Kedudukan</span>
+                            <span class="text-white font-medium">Kota Bandung</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <div class="inline-block p-4 bg-white rounded-xl">
+                        <div class="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-qrcode text-4xl text-gray-400"></i>
+                        </div>
+                        <p class="text-xs text-gray-600">Scan untuk verifikasi legalitas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-20 sm:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <div class="inline-block px-4 py-2 bg-src-gold/10 rounded-full mb-4">
+                    <span class="text-src-gold font-semibold text-sm tracking-wider">LAYANAN KAMI</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-src-dark mb-4">
+                    Solusi Komprehensif untuk <span class="text-gradient">Pembangunan</span>
+                </h2>
+                <p class="max-w-2xl mx-auto text-gray-600 text-lg">
+                    Kami menyediakan layanan konsultasi yang disesuaikan untuk membantu organisasi mencapai tujuan strategis secara efektif
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 scroll-reveal">
+                    <div class="w-14 h-14 bg-src-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-file-contract text-2xl text-src-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-src-dark mb-3">Project-Based Consulting</h3>
+                    <p class="text-gray-600 mb-4">Analisis kebijakan, pendampingan regulasi, dan penyusunan dokumen strategis untuk proyek spesifik.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Analisis kebijakan mendalam</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Pendampingan regulasi</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Dokumen strategis</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 scroll-reveal">
+                    <div class="w-14 h-14 bg-src-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl text-src-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-src-dark mb-3">Facilitation & Mediation</h3>
+                    <p class="text-gray-600 mb-4">Layanan fasilitasi dan mediasi untuk forum multipihak, konsultasi publik, dan FGD kebijakan.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Forum multipihak</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Konsultasi publik</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> FGD kebijakan</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 scroll-reveal">
+                    <div class="w-14 h-14 bg-src-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chalkboard-teacher text-2xl text-src-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-src-dark mb-3">Capacity Building</h3>
+                    <p class="text-gray-600 mb-4">Program pelatihan komprehensif untuk meningkatkan keterampilan dan pengetahuan dalam organisasi.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Workshop kebijakan</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Tata kelola administrasi</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Peningkatan kapasitas</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 scroll-reveal">
+                    <div class="w-14 h-14 bg-src-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-src-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-src-dark mb-3">Policy Evaluation</h3>
+                    <p class="text-gray-600 mb-4">Evaluasi efektivitas kebijakan serta pengukuran dampak regulasi secara komprehensif.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Evaluasi kebijakan</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Kajian dampak</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Pengukuran efektivitas</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 scroll-reveal">
+                    <div class="w-14 h-14 bg-src-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-2xl text-src-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-src-dark mb-3">Research & Development</h3>
+                    <p class="text-gray-600 mb-4">Riset dan pengembangan untuk mengoptimalkan sumber daya dan merancang strategi masa depan.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Analisis mendalam</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Optimasi sumber daya</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Strategi future-ready</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 scroll-reveal">
+                    <div class="w-14 h-14 bg-src-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-2xl text-src-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-src-dark mb-3">Advisory Contract</h3>
+                    <p class="text-gray-600 mb-4">Dukungan dalam manajemen proyek untuk memastikan pelaksanaan dan hasil yang optimal.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Manajemen proyek</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Pendampingan berkala</li>
+                        <li class="flex items-center"><i class="fas fa-check text-src-gold mr-2"></i> Monitoring evaluasi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="py-20 sm:py-32 bg-src-dark relative overflow-hidden">
+        <div class="absolute inset-0 hero-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 scroll-reveal">
+                <div class="inline-block px-4 py-2 bg-src-gold/10 rounded-full mb-4">
+                    <span class="text-src-gold font-semibold text-sm tracking-wider">NILAI-NILAI KAMI</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-4">
+                    Prinsip yang Membimbing <span class="text-gradient">Setiap Langkah</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all scroll-reveal">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full gradient-gold flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-3xl text-src-dark"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-4">Integritas</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Kami menjunjung tinggi standar kejujuran dan transparansi dalam seluruh layanan konsultasi, sehingga membangun kepercayaan dengan klien.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all scroll-reveal">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full gradient-gold flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-3xl text-src-dark"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-4">Inovasi</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Kami mengedepankan kreativitas dan solusi mutakhir untuk memastikan strategi yang kami berikan efektif dan relevan dengan kebutuhan klien.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all scroll-reveal">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full gradient-gold flex items-center justify-center">
+                        <i class="fas fa-award text-3xl text-src-dark"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-4">Komitmen</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Kami berkomitmen menghadirkan hasil berkualitas, menjaga profesionalisme, serta mendampingi klien pada setiap tahapan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-12">
+                <div class="text-center scroll-reveal">
+                    <div class="text-4xl font-bold text-src-gold mb-2">30+</div>
+                    <div class="text-gray-400 text-sm">Proyek Selesai</div>
+                </div>
+                <div class="text-center scroll-reveal">
+                    <div class="text-4xl font-bold text-src-gold mb-2">10+</div>
+                    <div class="text-gray-400 text-sm">Klien Puas</div>
+                </div>
+                <div class="text-center scroll-reveal">
+                    <div class="text-4xl font-bold text-src-gold mb-2">1+</div>
+                    <div class="text-gray-400 text-sm">Tahun Pengalaman</div>
+                </div>
+                <div class="text-center scroll-reveal">
+                    <div class="text-4xl font-bold text-src-gold mb-2">10+</div>
+                    <div class="text-gray-400 text-sm">Mitra Strategis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Our Associate Section -->
+<section id="team" class="py-20 sm:py-32 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center mb-16 scroll-reveal">
+            <div class="inline-block px-4 py-2 bg-src-gold/10 rounded-full mb-4">
+                <span class="text-src-gold font-semibold text-sm tracking-wider">TIM KAMI</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-src-dark mb-4">
+                Meet Our <span class="text-gradient">Associate</span>
+            </h2>
+            <p class="max-w-2xl mx-auto text-gray-600 text-lg">
+                Klik untuk melihat profil dan portofolio lengkap
+            </p>
+        </div>
+
+        <!-- Grid Associates -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            
+            <!-- Associate 1 - Farhan -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('farhan')">
+                <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative associate-photo" data-initials="FA">
+                    <img src="images/farhan.jpg" 
+                         alt="Farhan" 
+                         class="w-full h-full object-cover object-center relative z-10"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl z-0">
+                        FA
+                    </div>
+                </div>
+                <h3 class="font-bold text-src-dark text-base mb-1">A. Farhan Aqil Syauqi Pradanta</h3>
+                <p class="text-src-gold text-xs font-medium">Magister Rekayasa Tekstil dan Apparel</p>
+                <div class="mt-3 text-gray-400 text-xs">
+                    <i class="fas fa-eye mr-1"></i> Lihat Profil
+                </div>
+            </div>
+
+            <!-- Associate 2 - Agus -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('agus')">
+                <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative associate-photo" data-initials="AR">
+                    <img src="images/agus.jpg" 
+                         alt="Agus" 
+                         class="w-full h-full object-cover object-center relative z-10"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl z-0">
+                        AR
+                    </div>
+                </div>
+                <h3 class="font-bold text-src-dark text-base mb-1">Agus Riyanto</h3>
+                <p class="text-src-gold text-xs font-medium">Magister Ekonomi Terapan</p>
+                <div class="mt-3 text-gray-400 text-xs">
+                    <i class="fas fa-eye mr-1"></i> Lihat Profil
+                </div>
+            </div>
+
+            <!-- Associate 3 - Anton -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('anton')">
+                <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative associate-photo" data-initials="AS">
+                    <img src="images/anton.jpg" 
+                         alt="Anton" 
+                         class="w-full h-full object-cover object-center relative z-10"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl z-0">
+                        AS
+                    </div>
+                </div>
+                <h3 class="font-bold text-src-dark text-base mb-1">Anton Sulaiman</h3>
+                <p class="text-src-gold text-xs font-medium">Doktor Ilmu Komunikasi</p>
+                <div class="mt-3 text-gray-400 text-xs">
+                    <i class="fas fa-eye mr-1"></i> Lihat Profil
+                </div>
+            </div>
+
+            <!-- Associate 4 - Fikri -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('fikri')">
+                <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative associate-photo" data-initials="FM">
+                    <img src="images/fikri.jpg" 
+                         alt="Fikri" 
+                         class="w-full h-full object-cover object-center relative z-10"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl z-0">
+                        FM
+                    </div>
+                </div>
+                <h3 class="font-bold text-src-dark text-base mb-1">Fikri Maulana</h3>
+                <p class="text-src-gold text-xs font-medium">Magister Ilmu Politik</p>
+                <div class="mt-3 text-gray-400 text-xs">
+                    <i class="fas fa-eye mr-1"></i> Lihat Profil
+                </div>
+            </div>
+
+            <!-- Associate 5 - Fifih (Inisial Saja) -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('fifih')">
+                <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl border-4 border-white shadow-lg hover:scale-110 transition-transform">
+                    FR
+                </div>
+                <h3 class="font-bold text-src-dark text-base mb-1">Fifih Roffiqoh</h3>
+                <p class="text-src-gold text-xs font-medium">Magister Terapan Sosial</p>
+                <div class="mt-3 text-gray-400 text-xs">
+                    <i class="fas fa-eye mr-1"></i> Lihat Profil
+                </div>
+            </div>
+
+            <!-- Associate 6 - Juldan -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('juld')">
+                <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-src-gold shadow-lg hover:scale-110 transition-transform bg-gray-100 relative associate-photo" data-initials="JP">
+                    <img src="images/juldan.jpg" 
+                         alt="Juldan" 
+                         class="w-full h-full object-cover object-center relative z-10"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl z-0">
+                        JP
+                    </div>
+                </div>
+                <h3 class="font-bold text-src-dark text-base mb-1">Juldan Prabowo</h3>
+                <p class="text-src-gold text-xs font-medium">Digital Marketing & Graphic Designer</p>
+                <div class="mt-3 text-gray-400 text-xs">
+                    <i class="fas fa-eye mr-1"></i> Lihat Profil
+                </div>
+            </div>
+
+            <!-- Associate 7 - Nadya (Inisial Saja) -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all cursor-pointer scroll-reveal" onclick="openModal('nadya')">
+                <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-2xl border-4 border-white shadow-lg hover:scale-110 transition-transform">
+                    NP
+                </div>
+                <h3 class="font-bold text-src-dark text-base mb-1">Nadya D. Prasetyo</h3>
+                <p class="text-src-gold text-xs font-medium">Magister Ilmu Hukum & Advokat</p>
+                <div class="mt-3 text-gray-400 text-xs">
+                    <i class="fas fa-eye mr-1"></i> Lihat Profil
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="profileModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 p-4 backdrop-blur-sm">
+            <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
+                <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 transition-colors z-10">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+                <div id="modalContent" class="p-8"></div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            // Data profiles
+            const profiles = {
+                farhan: {
+                    name: "A. Farhan Aqil Syauqi Pradanta",
+                    title: "Magister Rekayasa Tekstil dan Apparel",
+                    expertise: ["Manajemen Industri Tekstil", "Supply Chain", "Quality Control"],
+                    education: "Magister Rekayasa Tekstil dan Apparel - Sekolah Tinggi Teknik Tekstil",
+                    projects: ["Konsultasi BUMD Tekstil Jawa Barat", "Audit Manufaktur Garment"],
+                    photo: "images/farhan.jpg",
+                    initials: "FA"
+                },
+                agus: {
+                    name: "Agus Riyanto",
+                    title: "Magister Ekonomi Terapan",
+                    expertise: ["Ekonomi Pembangunan", "Analisis Kebijakan", "Financial Planning"],
+                    education: "Magister Ekonomi Terapan - Universitas Padjajaran",
+                    projects: ["Evaluasi Dampak Ekonomi Proyek Infrastruktur", "Kajian Kelayakan Investasi"],
+                    photo: "images/agus.jpg",
+                    initials: "AR"
+                },
+                anton: {
+                    name: "Anton Sulaiman",
+                    title: "Doktor Ilmu Komunikasi",
+                    expertise: ["Public Relations", "Media Strategy", "Crisis Communication"],
+                    education: "Doktor Ilmu Komunikasi - Universitas Padjajaran",
+                    projects: ["Strategi Komunikasi Pemerintah Daerah", "Media Training untuk BUMN"],
+                    photo: "images/anton.jpg",
+                    initials: "AS"
+                },
+                fikri: {
+                    name: "Fikri Maulana",
+                    title: "Magister Ilmu Politik",
+                    expertise: ["Analisis Kebijakan Publik", "Political Strategy", "Stakeholder Mapping"],
+                    education: "Magister Ilmu Politik - Universitas Padjajaran",
+                    projects: ["Kajian Kebijakan Perdagangan", "Advokasi Kepentingan Pelaku Usaha"],
+                    photo: "images/fikri.jpg",
+                    initials: "FM"
+                },
+                fifih: {
+                    name: "Fifih Roffiqoh",
+                    title: "Magister Terapan Sosial",
+                    expertise: ["Community Development", "Social Impact Assessment", "CSR Strategy"],
+                    education: "Magister Terapan Sosial - Sekolah Tinggi Kesejahteraan Sosial",
+                    projects: ["Pengembangan Masyarakat Sekitar Proyek", "Assessment Dampak Sosial"],
+                    photo: "",
+                    initials: "FR"
+                },
+                juld: {
+                    name: "Juldan Prabowo",
+                    title: "Digital Marketing & Graphic Designer",
+                    expertise: ["Brand Strategy", "Digital Campaign", "Visual Communication"],
+                    education: "Sarjana Desain - Universitas Widyatama",
+                    projects: ["Rebranding BUMD", "Social Media Strategy Pemerintah Kota"],
+                    photo: "images/juldan.jpg",
+                    initials: "JP"
+                },
+                nadya: {
+                    name: "Nadya D. Prasetyo",
+                    title: "Magister Ilmu Hukum & Advokat",
+                    expertise: ["Hukum Bisnis", "Kontrak Komersial", "Legal Compliance", "Due Diligence"],
+                    education: "Magister Ilmu Hukum & Advokat - Universitas Brawijaya",
+                    projects: ["Legal Due Diligence Proyek Infrastruktur", "Drafting Kontrak BUMD", "Konsultasi Hukum Korporasi"],
+                    photo: "",
+                    initials: "NP"
+                }
+            };
+
+            // Check image loading setelah DOM ready
+            document.addEventListener('DOMContentLoaded', function() {
+                const photoContainers = document.querySelectorAll('.associate-photo');
+                
+                photoContainers.forEach(container => {
+                    const img = container.querySelector('img');
+                    const fallback = container.querySelector('div');
+                    
+                    // Jika gambar sudah loaded sebelum check
+                    if (img.complete && img.naturalHeight !== 0) {
+                        img.style.opacity = '1';
+                        fallback.style.opacity = '0';
+                    } else {
+                        // Tunggu load
+                        img.onload = function() {
+                            img.style.opacity = '1';
+                            fallback.style.opacity = '0';
+                        };
+                        
+                        // Jika error
+                        img.onerror = function() {
+                            img.style.display = 'none';
+                            fallback.style.opacity = '1';
+                        };
+                    }
+                });
+            });
+
+            function openModal(profileId) {
+                const profile = profiles[profileId];
+                const modal = document.getElementById('profileModal');
+                const content = document.getElementById('modalContent');
+                
+                // Generate photo section
+                let photoSection = '';
+                if (profile.photo) {
+                    photoSection = `
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-src-gold shadow-lg relative bg-gray-100">
+                            <img src="${profile.photo}" 
+                                 alt="${profile.name}" 
+                                 class="w-full h-full object-cover relative z-10"
+                                 onload="this.style.opacity='1'; this.nextElementSibling.style.opacity='0'"
+                                 onerror="this.style.display='none'">
+                            <div class="absolute inset-0 bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-4xl z-0 transition-opacity duration-300">
+                                ${profile.initials}
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    photoSection = `
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark font-serif font-bold text-4xl border-4 border-white shadow-lg">
+                            ${profile.initials}
+                        </div>
+                    `;
+                }
+
+                const expertiseTags = profile.expertise.map(exp => 
+                    `<span class="px-3 py-1 bg-src-gold/10 text-src-gold rounded-full text-sm font-medium">${exp}</span>`
+                ).join('');
+
+                const projectsList = profile.projects.map(proj => 
+                    `<li class="flex items-start mb-2"><i class="fas fa-check-circle text-src-gold mt-1 mr-2"></i><span class="text-gray-600">${proj}</span></li>`
+                ).join('');
+
+                content.innerHTML = `
+                    ${photoSection}
+                    <h3 class="text-2xl font-bold text-src-dark text-center mb-2">${profile.name}</h3>
+                    <p class="text-src-gold text-center font-medium mb-6">${profile.title}</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-src-dark mb-3 flex items-center"><i class="fas fa-graduation-cap mr-2 text-src-gold"></i>Pendidikan</h4>
+                        <p class="text-gray-600 bg-gray-50 p-3 rounded-lg">${profile.education}</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-src-dark mb-3 flex items-center"><i class="fas fa-lightbulb mr-2 text-src-gold"></i>Keahlian</h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${expertiseTags}
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-src-dark mb-3 flex items-center"><i class="fas fa-briefcase mr-2 text-src-gold"></i>Proyek Terkait</h4>
+                        <ul class="text-gray-600">
+                            ${projectsList}
+                        </ul>
+                    </div>
+                `;
+                
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                const modal = document.getElementById('profileModal');
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }
+
+            document.getElementById('profileModal').addEventListener('click', function(e) {
+                if (e.target === this) closeModal();
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') closeModal();
+            });
+        </script>
+    </div>
+</section>
+    
+<!-- Customer Segments Section -->
+<section id="clients" class="py-20 sm:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 scroll-reveal">
+            <div class="inline-block px-4 py-2 bg-src-gold/10 rounded-full mb-4">
+                <span class="text-src-gold font-semibold text-sm tracking-wider">SEGMEN PELANGGAN</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-src-dark mb-4">
+                Siapa yang <span class="text-gradient">Kami Layani</span>
+            </h2>
+            <p class="max-w-2xl mx-auto text-gray-600 text-lg">
+                Klik untuk melihat detail layanan kami bagi setiap segmen
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Segmen 1: Pemerintah -->
+            <div class="group bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 cursor-pointer scroll-reveal border-2 border-transparent hover:border-src-gold" onclick="openSegmentModal('pemerintah')">
+                <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-src-gold/10 group-hover:bg-src-gold flex items-center justify-center transition-all">
+                    <i class="fas fa-landmark text-3xl text-src-gold group-hover:text-src-dark transition-all"></i>
+                </div>
+                <h3 class="text-xl font-bold text-src-dark mb-2">Pemerintah</h3>
+                <p class="text-gray-600 text-sm">Pemerintah Pusat & Daerah</p>
+                <div class="mt-4 text-src-gold text-xs font-medium">
+                    <i class="fas fa-plus-circle mr-1"></i> Klik untuk detail
+                </div>
+            </div>
+
+            <!-- Segmen 2: BUMD/BLUD -->
+            <div class="group bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 cursor-pointer scroll-reveal border-2 border-transparent hover:border-src-gold" onclick="openSegmentModal('bumd')">
+                <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-src-gold/10 group-hover:bg-src-gold flex items-center justify-center transition-all">
+                    <i class="fas fa-building text-3xl text-src-gold group-hover:text-src-dark transition-all"></i>
+                </div>
+                <h3 class="text-xl font-bold text-src-dark mb-2">BUMD / BLUD</h3>
+                <p class="text-gray-600 text-sm">Badan Usaha Milik Daerah</p>
+                <div class="mt-4 text-src-gold text-xs font-medium">
+                    <i class="fas fa-plus-circle mr-1"></i> Klik untuk detail
+                </div>
+            </div>
+
+            <!-- Segmen 3: Pelaku Usaha -->
+            <div class="group bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 cursor-pointer scroll-reveal border-2 border-transparent hover:border-src-gold" onclick="openSegmentModal('usaha')">
+                <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-src-gold/10 group-hover:bg-src-gold flex items-center justify-center transition-all">
+                    <i class="fas fa-industry text-3xl text-src-gold group-hover:text-src-dark transition-all"></i>
+                </div>
+                <h3 class="text-xl font-bold text-src-dark mb-2">Pelaku Usaha</h3>
+                <p class="text-gray-600 text-sm">Terdampak Kebijakan Publik</p>
+                <div class="mt-4 text-src-gold text-xs font-medium">
+                    <i class="fas fa-plus-circle mr-1"></i> Klik untuk detail
+                </div>
+            </div>
+
+            <!-- Segmen 4: Lembaga & Organisasi -->
+            <div class="group bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 cursor-pointer scroll-reveal border-2 border-transparent hover:border-src-gold" onclick="openSegmentModal('lembaga')">
+                <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-src-gold/10 group-hover:bg-src-gold flex items-center justify-center transition-all">
+                    <i class="fas fa-globe text-3xl text-src-gold group-hover:text-src-dark transition-all"></i>
+                </div>
+                <h3 class="text-xl font-bold text-src-dark mb-2">Lembaga & Organisasi</h3>
+                <p class="text-gray-600 text-sm">Pembangunan & Masyarakat</p>
+                <div class="mt-4 text-src-gold text-xs font-medium">
+                    <i class="fas fa-plus-circle mr-1"></i> Klik untuk detail
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="segmentModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 p-4 backdrop-blur-sm">
+            <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative animate-fade-in shadow-2xl">
+                
+                <!-- Close Button -->
+                <button onclick="closeSegmentModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 transition-colors z-10">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+                
+                <!-- Content -->
+                <div id="segmentModalContent" class="p-8">
+                    <!-- Content inserted by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript for Popup -->
+        <script>
+            const segmentData = {
+                pemerintah: {
+                    icon: 'fa-landmark',
+                    title: 'Pemerintah Pusat & Daerah',
+                    subtitle: 'Solusi Kebijakan untuk Institusi Publik',
+                    description: 'Kami mendukung pemerintah dalam menyusun, menganalisis, dan mengimplementasikan kebijakan publik yang efektif dan berkelanjutan.',
+                    services: [
+                        'Analisis kebijakan publik dan dampak regulasi',
+                        'Penyusunan dokumen perencanaan strategis (RPJMD, Renstra)',
+                        'Evaluasi program dan kebijakan pemerintah',
+                        'Pendampingan teknis implementasi regulasi',
+                        'Facilitasi stakeholder untuk kebijakan multipartai'
+                    ],
+                    examples: ['Kementerian/Lembaga Negara', 'Pemerintah Provinsi', 'Pemerintah Kota/Kabupaten', 'Dinas/Badan Teknis'],
+                    benefit: 'Meningkatkan efektivitas layanan publik dan kepuasan masyarakat'
+                },
+                bumd: {
+                    icon: 'fa-building',
+                    title: 'BUMD / BLUD',
+                    subtitle: 'Transformasi Badan Usaha Daerah',
+                    description: 'Membantu BUMD dan BLUD dalam transformasi bisnis, peningkatan kinerja, dan kepatuhan regulasi untuk memberikan nilai tambah bagi daerah.',
+                    services: [
+                        'Restrukturisasi organisasi dan tata kelola BUMD',
+                        'Analisis kelayakan investasi dan pengembangan usaha',
+                        'Penyusunan Rencana Bisnis dan Anggaran (RBA)',
+                        'Pendampingan transformasi digital BUMD',
+                        'Evaluasi kinerja keuangan dan operasional'
+                    ],
+                    examples: ['Perusahaan Daerah (Perumda)', 'RSUD/RSU', 'Perusahaan Air Minum (PDAM)', 'BLUD Pendidikan & Kesehatan'],
+                    benefit: 'Meningkatkan profitabilitas dan pelayanan publik BUMD'
+                },
+                usaha: {
+                    icon: 'fa-industry',
+                    title: 'Pelaku Usaha',
+                    subtitle: 'Navigasi Kebijakan untuk Sektor Swasta',
+                    description: 'Membantu perusahaan memahami, menyesuaikan diri, dan mengoptimalkan peluang dari kebijakan publik yang berdampak pada bisnis.',
+                    services: [
+                        'Analisis dampak regulasi terhadap bisnis',
+                        'Advokasi kebijakan untuk kepentingan industri',
+                        'Konsultasi compliance dan legal',
+                        'Strategi lobbying dan government relations',
+                        'Pelatihan tata kelola perusahaan berbasis regulasi'
+                    ],
+                    examples: ['Korporasi Besar', 'Startup & Unicorn', 'UMKM', 'Asosiasi Bisnis & Kamar Dagang'],
+                    benefit: 'Meminimalkan risiko regulasi dan memaksimalkan peluang bisnis'
+                },
+                lembaga: {
+                    icon: 'fa-globe',
+                    title: 'Lembaga & Organisasi Masyarakat',
+                    subtitle: 'Kemitraan untuk Pembangunan Berkelanjutan',
+                    description: 'Bekerjasama dengan lembaga pembangunan dan organisasi masyarakat dalam advokasi kebijakan, penelitian, dan pemberdayaan komunitas.',
+                    services: [
+                        'Kajian dan penelitian kebijakan publik',
+                        'Facilitasi dialog multipartai dan konsultasi publik',
+                        'Penguatan kapasitas organisasi masyarakat',
+                        'Monitoring dan evaluasi program pembangunan',
+                        'Advokasi kebijakan berbasis bukti (evidence-based)'
+                    ],
+                    examples: ['Lembaga Donor Internasional', 'NGO/LSM', 'Organisasi Masyarakat Sipil', 'Lembaga Riset & Akademisi', 'organisasi kemahasiswaan'],
+                    benefit: 'Menguatkan suara masyarakat dalam proses kebijakan'
+                }
+            };
+
+            function openSegmentModal(segment) {
+                const data = segmentData[segment];
+                const modal = document.getElementById('segmentModal');
+                const content = document.getElementById('segmentModalContent');
+                
+                content.innerHTML = `
+                    <div class="text-center mb-8">
+                        <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-src-gold to-yellow-400 flex items-center justify-center text-src-dark text-3xl mb-4">
+                            <i class="fas ${data.icon}"></i>
+                        </div>
+                        <h2 class="text-2xl font-serif font-bold text-src-dark mb-2">${data.title}</h2>
+                        <p class="text-src-gold font-medium">${data.subtitle}</p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 rounded-xl p-6">
+                            <h4 class="font-bold text-src-dark mb-3"><i class="fas fa-info-circle text-src-gold mr-2"></i>Deskripsi</h4>
+                            <p class="text-gray-600 leading-relaxed">${data.description}</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-src-dark mb-4"><i class="fas fa-tasks text-src-gold mr-2"></i>Layanan Kami</h4>
+                            <ul class="space-y-3">
+                                ${data.services.map(service => `
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-src-gold mt-1 mr-3 flex-shrink-0"></i>
+                                        <span class="text-gray-600">${service}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-src-gold/10 rounded-xl p-6 border border-src-gold/20">
+                            <h4 class="font-bold text-src-dark mb-3"><i class="fas fa-users text-src-gold mr-2"></i>Contoh Klien</h4>
+                            <div class="flex flex-wrap gap-2">
+                                ${data.examples.map(ex => `
+                                    <span class="px-3 py-1 bg-white text-src-gold rounded-full text-sm font-medium border border-src-gold/20">${ex}</span>
+                                `).join('')}
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-src-dark to-gray-800 rounded-xl p-6 text-white">
+                            <h4 class="font-bold mb-2"><i class="fas fa-trophy text-src-gold mr-2"></i>Manfaat</h4>
+                            <p class="text-gray-300">${data.benefit}</p>
+                        </div>
+                        
+                        <div class="text-center pt-4">
+                            <a href="#contact" onclick="closeSegmentModal()" class="inline-flex items-center px-8 py-3 gradient-gold text-src-dark font-bold rounded-full hover:shadow-lg transition-all">
+                                <i class="fas fa-envelope mr-2"></i> Konsultasi Sekarang
+                            </a>
+                        </div>
+                    </div>
+                `;
+                
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeSegmentModal() {
+                const modal = document.getElementById('segmentModal');
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }
+
+            // Close when clicking outside
+            document.getElementById('segmentModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeSegmentModal();
+                }
+            });
+
+            // Close with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeSegmentModal();
+                }
+            });
+        </script>
+
+        <!-- CTA Box -->
+        <div class="mt-16 bg-gradient-to-r from-src-gold/10 to-transparent rounded-2xl p-8 border border-src-gold/20 scroll-reveal">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-left">
+                    <h4 class="text-xl font-bold text-src-dark mb-2">Tidak Menemukan Segmen Anda?</h4>
+                    <p class="text-gray-600">Kami siap membantu berbagai sektor dan skala proyek. Diskusikan kebutuhan spesifik Anda.</p>
+                </div>
+                <a href="#contact" class="px-8 py-3 gradient-gold text-src-dark font-bold rounded-full hover:shadow-lg transition-all whitespace-nowrap">
+                    Hubungi Kami
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Contact Section -->
+<!-- Pengadaan via SIPLah -->
+<section id="siplah" class="py-20 sm:py-28 bg-src-dark relative overflow-hidden">
+    <div class="absolute inset-0 hero-pattern opacity-60"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="scroll-reveal">
+                <div class="inline-block px-4 py-2 bg-src-gold/10 rounded-full mb-4 border border-src-gold/30">
+                    <span class="text-src-gold font-semibold text-sm tracking-wider">PENGADAAN RESMI</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                    Pengadaan Sekolah melalui <span class="text-gradient">SIPLah</span>
+                </h2>
+                <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                    PT Symphony Rengganis Konsultan terdaftar sebagai penyedia resmi di SIPLah (Sistem Informasi Pengadaan Sekolah) melalui Toko Ladang. Satuan pendidikan dapat memesan layanan kami secara langsung, tercatat, dan akuntabel.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://siplah.tokoladang.co.id/official-store/pt-symphony-rengganis-konsultant.90608" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-8 py-4 gradient-gold text-src-dark font-bold rounded-full hover:shadow-lg hover:shadow-yellow-500/30 transition-all">
+                        <i class="fas fa-store mr-2"></i> Kunjungi Toko SIPLah Kami
+                    </a>
+                    <a href="https://wa.me/6282131055498?text=Halo%20SRC%2C%20saya%20ingin%20bertanya%20tentang%20pengadaan%20melalui%20SIPLah." target="_blank" rel="noopener" class="inline-flex items-center justify-center px-8 py-4 border border-src-gold text-src-gold font-semibold rounded-full hover:bg-src-gold hover:text-src-dark transition-all">
+                        <i class="fab fa-whatsapp mr-2"></i> Tanya via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4 scroll-reveal">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                    <i class="fas fa-shield-alt text-src-gold text-2xl mb-3"></i>
+                    <h4 class="font-bold text-white mb-2">Resmi &amp; Terverifikasi</h4>
+                    <p class="text-gray-400 text-sm">Penyedia berbadan hukum PT dengan legalitas lengkap (AHU &amp; NIB).</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                    <i class="fas fa-file-invoice text-src-gold text-2xl mb-3"></i>
+                    <h4 class="font-bold text-white mb-2">Transaksi Tercatat</h4>
+                    <p class="text-gray-400 text-sm">Pemesanan, pembayaran, dan dokumen transaksi terekam di sistem SIPLah.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                    <i class="fas fa-school text-src-gold text-2xl mb-3"></i>
+                    <h4 class="font-bold text-white mb-2">Untuk Satuan Pendidikan</h4>
+                    <p class="text-gray-400 text-sm">Memudahkan sekolah membelanjakan anggaran sesuai ketentuan pengadaan.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                    <i class="fas fa-handshake text-src-gold text-2xl mb-3"></i>
+                    <h4 class="font-bold text-white mb-2">Didampingi Tim Ahli</h4>
+                    <p class="text-gray-400 text-sm">Layanan dikerjakan langsung oleh tim konsultan SRC yang berpengalaman.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="py-20 sm:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="scroll-reveal">
+                    <div class="inline-block px-4 py-2 bg-src-gold/10 rounded-full mb-4">
+                        <span class="text-src-gold font-semibold text-sm tracking-wider">HUBUNGI KAMI</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-src-dark mb-6">
+                        Mari Berkolaborasi untuk <span class="text-gradient">Pembangunan yang Lebih Baik</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Siap membantu Anda dalam mediasi kebijakan, konsultasi proyek, dan pengembangan kapasitas. Hubungi kami untuk diskusi lebih lanjut.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-src-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-src-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-src-dark">Email</h4>
+                                <p class="text-gray-600">symphonyrengganisconsultant@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-src-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-src-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-src-dark">Telepon</h4>
+                                <p class="text-gray-600">0821 3105 5498</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-src-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-instagram text-src-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-src-dark">Instagram</h4>
+                                <a href="https://instagram.com/symphonyrengganisconsultant" target="_blank" rel="noopener" class="text-src-gold hover:underline">@symphonyrengganisconsultant</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-src-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-src-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-src-dark">Lokasi</h4>
+                                <p class="text-gray-600">Bandung, Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-src-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-store text-src-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-src-dark">Toko SIPLah</h4>
+                                <a href="https://siplah.tokoladang.co.id/official-store/pt-symphony-rengganis-konsultant.90608" target="_blank" rel="noopener" class="text-src-gold hover:underline">PT Symphony Rengganis Konsultan di Toko Ladang</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-reveal bg-white rounded-2xl p-8 shadow-xl">
+                    <form action="https://formspree.io/f/mojnzqnq" method="POST" class="space-y-6">
+                     
+                        <!-- Nama -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap *</label>
+                            <input type="text" name="name" required 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-src-gold focus:ring-2 focus:ring-src-gold/20 outline-none transition-all" 
+                                   placeholder="Masukkan nama Anda">
+                        </div>
+                        
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" name="email" required 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-src-gold focus:ring-2 focus:ring-src-gold/20 outline-none transition-all" 
+                                   placeholder="email@anda.com">
+                        </div>
+                        
+                        <!-- Institusi -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Institusi/Perusahaan</label>
+                            <input type="text" name="institusi" 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-src-gold focus:ring-2 focus:ring-src-gold/20 outline-none transition-all" 
+                                   placeholder="Nama institusi (opsional)">
+                        </div>
+                        
+                        <!-- Pesan -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Pesan *</label>
+                            <textarea name="message" rows="4" required 
+                                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-src-gold focus:ring-2 focus:ring-src-gold/20 outline-none transition-all" 
+                                      placeholder="Ceritakan kebutuhan Anda..."></textarea>
+                        </div>
+                        
+                        <!-- Tombol Kirim -->
+                        <button type="submit" 
+                                class="w-full py-4 gradient-gold text-src-dark font-bold rounded-lg hover:shadow-xl hover:shadow-yellow-500/30 transition-all transform hover:scale-[1.02]">
+                            <i class="fas fa-paper-plane mr-2"></i> Kirim Pesan
+                        </button>
+                        
+                        <!-- Pesan Sukses (Hidden by default) -->
+                        <p class="text-green-600 text-center hidden" id="formSuccess">
+                            <i class="fas fa-check-circle mr-1"></i> Pesan terkirim! Kami akan menghubungi Anda segera.
+                        </p>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-src-dark text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-full gradient-gold flex items-center justify-center">
+                            <span class="text-src-dark font-serif font-bold">SRC</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif font-bold text-lg">SYMPHONY RENGGANIS</h3>
+                            <p class="text-src-gold text-xs">CONSULTANT</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-md">
+                        Konsultan kebijakan yang menjembatani kebijakan publik dengan praktik pembangunan nyata melalui mediasi kebijakan profesional dan berbasis regulasi.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-src-gold">Layanan</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Project-Based Consulting</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Facilitation & Mediation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Capacity Building</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Policy Evaluation</a></li>
+                        <li><a href="#siplah" class="hover:text-white transition-colors">Pengadaan via SIPLah</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4 text-src-gold">Kontak</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i> symphonyrengganisconsultant@gmail.com</li>
+                        <li><i class="fas fa-phone mr-2"></i> 0821 3105 5498</li>
+                        <li><i class="fab fa-whatsapp mr-2"></i> <a href="https://wa.me/6282131055498" target="_blank" rel="noopener" class="hover:text-white transition-colors">Chat via WhatsApp</a></li>
+                        <li><i class="fab fa-instagram mr-2"></i> <a href="https://instagram.com/symphonyrengganisconsultant" target="_blank" rel="noopener" class="hover:text-white transition-colors">@symphonyrengganisconsultant</a></li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Jl. Menes No.1, Kebon Waru, Batununggal, Bandung 40272</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    © <span id="year">2026</span> Symphony Rengganis Consultant. All rights reserved.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com/symphonyrengganisconsultant" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-src-gold hover:text-src-dark transition-all">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/6282131055498" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-src-gold hover:text-src-dark transition-all">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:santriagung@srconsultant.solutions" aria-label="Email" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-src-gold hover:text-src-dark transition-all">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tahun copyright otomatis
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+                navbar.classList.add('bg-src-dark/95');
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.classList.remove('bg-src-dark/95');
+            }
+        });
+
+        // Scroll Reveal Animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+<!-- Floating WhatsApp Button with Bubble -->
+<div class="fixed bottom-6 right-6 z-50 flex items-end flex-col gap-2">
+    
+    <!-- Bubble Chat -->
+    <div class="bg-white rounded-2xl rounded-br-none shadow-lg px-4 py-3 mb-2 animate-bounce-slow border border-gray-100 max-w-[200px]">
+        <p class="text-sm font-bold text-src-dark">
+            <i class="fab fa-whatsapp text-green-500 mr-1"></i>
+            Free Konsultasi!
+        </p>
+        <p class="text-xs text-gray-500 mt-1">Chat dengan tim kami</p>
+        <!-- Triangle pointer -->
+        <div class="absolute -bottom-2 right-4 w-4 h-4 bg-white border-b border-r border-gray-100 transform rotate-45"></div>
+    </div>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6282131055498" target="_blank" 
+       class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 relative">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+        <!-- Notification dot -->
+        <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold animate-pulse">
+            1
+        </span>
+    </a>
+    
+</div>
+
+<!-- CSS Animation -->
+<style>
+    @keyframes bounce-slow {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+    .animate-bounce-slow {
+        animation: bounce-slow 2s infinite;
+    }
+</style>
+</body>
+</html>
