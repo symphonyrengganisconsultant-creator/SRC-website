@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Sekolah Politik &amp; Kebijakan Batch 01 | Symphony Rengganis Consultant</title>
+    <meta name="description" content="Formulir pendaftaran Sekolah Politik & Kebijakan Batch 01 — program gratis 2 hari 1 malam di Bandung untuk 50 pemuda dan mahasiswa. Diselenggarakan oleh PT Symphony Rengganis Konsultan.">
+    <meta name="theme-color" content="#1A1A1A">
+    <link rel="canonical" href="https://srconsultant.solutions/daftar.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Symphony Rengganis Consultant">
+    <meta property="og:title" content="Daftar Sekolah Politik & Kebijakan Batch 01 — Gratis, 50 Kursi">
+    <meta property="og:description" content="Program non-partisan 2 hari 1 malam di Bandung untuk pemuda dan mahasiswa usia 18–30 tahun. Seleksi melalui esai isu daerah.">
+    <meta property="og:url" content="https://srconsultant.solutions/daftar.html">
+    <meta property="og:image" content="https://srconsultant.solutions/images/og-image.jpg">
+    <meta property="og:locale" content="id_ID">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23D4AF37'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='22' font-weight='700' text-anchor='middle' fill='%231A1A1A'%3ESRC%3C/text%3E%3C/svg%3E">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: {
+                colors: { 'src-gold': '#D4AF37', 'src-gold-light': '#F4E8C1', 'src-dark': '#1A1A1A', 'src-gray': '#2D3748' },
+                fontFamily: { 'serif': ['Playfair Display', 'serif'], 'sans': ['Inter', 'sans-serif'] }
+            } }
+        }
+    </script>
+    <style>
+        .text-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F4E8C1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .field { width: 100%; border: 1px solid #d1d5db; border-radius: .5rem; padding: .7rem .9rem; font-size: .95rem; background: #fff; }
+        .field:focus { outline: none; border-color: #D4AF37; box-shadow: 0 0 0 3px rgba(212,175,55,.25); }
+        .field.invalid { border-color: #dc2626; }
+        .lbl { display: block; font-weight: 600; font-size: .9rem; margin-bottom: .35rem; color: #1A1A1A; }
+        .req::after { content: " *"; color: #b45309; }
+        .hint { font-size: .8rem; color: #6b7280; margin-top: .3rem; }
+        .err { font-size: .8rem; color: #dc2626; margin-top: .3rem; display: none; }
+        .err.show { display: block; }
+        .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    </style>
+</head>
+<body class="bg-[#FAF8F2] font-sans text-src-dark">
+
+    <!-- Header -->
+    <header class="bg-src-dark">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <span class="w-10 h-10 rounded-full bg-src-gold flex items-center justify-center font-serif font-bold text-src-dark text-sm">SRC</span>
+                <span class="text-white font-serif text-lg hidden sm:inline">Symphony Rengganis Consultant</span>
+            </a>
+            <a href="index.html" class="text-src-gold text-sm hover:underline"><i class="fas fa-arrow-left mr-1"></i> Beranda</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-src-dark text-white pb-14 pt-8">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <p class="text-src-gold uppercase tracking-[.25em] text-xs font-semibold mb-3">Formulir Pendaftaran</p>
+            <h1 class="font-serif text-3xl md:text-5xl font-bold leading-tight mb-4">Sekolah Politik &amp; <span class="text-gradient">Kebijakan</span></h1>
+            <p class="text-gray-300 text-lg mb-8">Batch 01 · 2 hari 1 malam · Bandung</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-left">
+                <div class="border border-src-gold/40 rounded-lg p-3"><p class="text-src-gold text-xl font-bold">Gratis</p><p class="text-xs text-gray-400">tanpa biaya pendaftaran</p></div>
+                <div class="border border-src-gold/40 rounded-lg p-3"><p class="text-src-gold text-xl font-bold">50</p><p class="text-xs text-gray-400">kursi peserta</p></div>
+                <div class="border border-src-gold/40 rounded-lg p-3"><p class="text-src-gold text-xl font-bold">18–30</p><p class="text-xs text-gray-400">tahun, pemuda &amp; mahasiswa</p></div>
+                <div class="border border-src-gold/40 rounded-lg p-3"><p class="text-src-gold text-xl font-bold">Non-partisan</p><p class="text-xs text-gray-400">tanpa afiliasi partai</p></div>
+            </div>
+            <p id="info-tutup" class="hidden mt-6 text-sm text-src-gold-light"></p>
+        </div>
+    </section>
+
+    <main class="max-w-3xl mx-auto px-4 -mt-8 pb-16">
+
+        <!-- Ketentuan -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
+            <h2 class="font-serif text-xl font-bold mb-3">Sebelum mengisi</h2>
+            <ul class="text-sm text-gray-700 space-y-2">
+                <li><i class="fas fa-check text-src-gold mr-2"></i>Berusia 18–30 tahun, berstatus mahasiswa atau pemuda non-mahasiswa.</li>
+                <li><i class="fas fa-check text-src-gold mr-2"></i>Siapkan esai tentang satu isu di daerahmu, 300–500 kata. Tulis di dokumen lain dulu, lalu tempel di sini.</li>
+                <li><i class="fas fa-check text-src-gold mr-2"></i>Siapkan tautan CV (Google Drive atau sejenisnya) dengan akses "siapa saja yang memiliki link".</li>
+                <li><i class="fas fa-check text-src-gold mr-2"></i>Bersedia mengikuti seluruh rangkaian kegiatan dari awal sampai akhir.</li>
+                <li><i class="fas fa-check text-src-gold mr-2"></i>Satu email hanya bisa digunakan untuk satu pendaftaran. Waktu pengisian sekitar 20–30 menit.</li>
+            </ul>
+        </div>
+
+        <!-- Form -->
+        <form id="form-daftar" novalidate class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 md:p-8 space-y-10">
+
+            <!-- Honeypot anti-bot (jangan diisi) -->
+            <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+            <!-- 1. Data diri -->
+            <fieldset class="space-y-5">
+                <legend class="font-serif text-2xl font-bold mb-1"><span class="text-src-gold">01</span> Data diri</legend>
+                <div>
+                    <label class="lbl req" for="nama">Nama lengkap</label>
+                    <input class="field" id="nama" name="nama" type="text" maxlength="120" autocomplete="name" required>
+                    <p class="hint">Sesuai KTP/KTM, akan dipakai untuk sertifikat.</p>
+                    <p class="err">Nama lengkap wajib diisi.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-5">
+                    <div>
+                        <label class="lbl req" for="email">Email</label>
+                        <input class="field" id="email" name="email" type="email" maxlength="120" autocomplete="email" required>
+                        <p class="err">Masukkan alamat email yang valid.</p>
+                    </div>
+                    <div>
+                        <label class="lbl req" for="wa">No. WhatsApp</label>
+                        <input class="field" id="wa" name="wa" type="tel" inputmode="numeric" maxlength="16" placeholder="08xxxxxxxxxx" autocomplete="tel" required>
+                        <p class="err">Nomor WhatsApp 10–15 digit, diawali 08 atau 62.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-5">
+                    <div>
+                        <span class="lbl req">Jenis kelamin</span>
+                        <div class="flex gap-6 pt-2">
+                            <label class="flex items-center gap-2 text-sm"><input type="radio" name="jk" value="Laki-laki" class="accent-yellow-600" required> Laki-laki</label>
+                            <label class="flex items-center gap-2 text-sm"><input type="radio" name="jk" value="Perempuan" class="accent-yellow-600"> Perempuan</label>
+                        </div>
+                        <p class="err" data-for="jk">Pilih jenis kelamin.</p>
+                    </div>
+                    <div>
+                        <label class="lbl req" for="tgl_lahir">Tanggal lahir</label>
+                        <input class="field" id="tgl_lahir" name="tgl_lahir" type="date" required>
+                        <p class="hint" id="usia-info"></p>
+                        <p class="err">Usia peserta harus 18–30 tahun.</p>
+                    </div>
+                </div>
+                <div>
+                    <label class="lbl req" for="domisili">Kabupaten/kota domisili</label>
+                    <input class="field" id="domisili" name="domisili" type="text" list="daftar-kota" maxlength="80" placeholder="Ketik atau pilih, mis. Kota Bandung" required>
+                    <datalist id="daftar-kota"></datalist>
+                    <p class="err">Kabupaten/kota domisili wajib diisi.</p>
+                </div>
+            </fieldset>
+
+            <!-- 2. Pendidikan & organisasi -->
+            <fieldset class="space-y-5">
+                <legend class="font-serif text-2xl font-bold mb-1"><span class="text-src-gold">02</span> Pendidikan &amp; organisasi</legend>
+                <div>
+                    <span class="lbl req">Status saat ini</span>
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-6 pt-2">
+                        <label class="flex items-center gap-2 text-sm"><input type="radio" name="status" value="Mahasiswa" class="accent-yellow-600" required> Mahasiswa</label>
+                        <label class="flex items-center gap-2 text-sm"><input type="radio" name="status" value="Pemuda non-mahasiswa" class="accent-yellow-600"> Pemuda non-mahasiswa</label>
+                    </div>
+                    <p class="err" data-for="status">Pilih status.</p>
+                </div>
+                <div>
+                    <label class="lbl req" for="kampus" id="lbl-kampus">Kampus / instansi / tempat kegiatan</label>
+                    <input class="field" id="kampus" name="kampus" type="text" maxlength="150" required>
+                    <p class="err">Kolom ini wajib diisi.</p>
+                </div>
+                <div id="wrap-prodi" class="hidden">
+                    <label class="lbl req" for="prodi">Program studi &amp; semester</label>
+                    <input class="field" id="prodi" name="prodi" type="text" maxlength="120" placeholder="mis. Ilmu Pemerintahan, semester 5">
+                    <p class="err">Wajib diisi untuk mahasiswa.</p>
+                </div>
+                <div>
+                    <label class="lbl req" for="organisasi">Organisasi/komunitas &amp; jabatan saat ini</label>
+                    <input class="field" id="organisasi" name="organisasi" type="text" maxlength="200" placeholder="mis. BEM Fakultas — Kepala Departemen Kajian Strategis" required>
+                    <p class="hint">Tulis "Belum aktif berorganisasi" bila belum ada.</p>
+                    <p class="err">Kolom ini wajib diisi.</p>
+                </div>
+                <div>
+                    <label class="lbl req" for="pengalaman">Pengalaman organisasi &amp; kegiatan sosial</label>
+                    <textarea class="field" id="pengalaman" name="pengalaman" rows="4" maxlength="2000" placeholder="Sebutkan organisasi, peran, tahun, dan satu capaian yang paling kamu banggakan." required></textarea>
+                    <p class="err">Kolom ini wajib diisi.</p>
+                </div>
+                <div>
+                    <label class="lbl" for="cv">Tautan CV</label>
+                    <input class="field" id="cv" name="cv" type="url" maxlength="300" placeholder="https://drive.google.com/...">
+                    <p class="hint">Opsional, tetapi membantu penilaian. Pastikan tautan bisa dibuka tanpa meminta izin.</p>
+                    <p class="err">Tautan harus diawali https://</p>
+                </div>
+            </fieldset>
+
+            <!-- 3. Esai & gagasan -->
+            <fieldset class="space-y-5">
+                <legend class="font-serif text-2xl font-bold mb-1"><span class="text-src-gold">03</span> Esai &amp; gagasan</legend>
+                <div>
+                    <label class="lbl req" for="judul_isu">Judul esai isu daerah</label>
+                    <input class="field" id="judul_isu" name="judul_isu" type="text" maxlength="150" required>
+                    <p class="err">Judul esai wajib diisi.</p>
+                </div>
+                <div>
+                    <label class="lbl req" for="esai">Esai isu daerah (300–500 kata)</label>
+                    <p class="hint mb-2">Uraikan satu masalah nyata di daerahmu: apa masalahnya, siapa yang terdampak, kebijakan apa yang sudah ada, dan usulan solusimu. Esai dinilai dari ketajaman analisis dan kelayakan solusi, bukan dari panjangnya.</p>
+                    <textarea class="field" id="esai" name="esai" rows="12" required></textarea>
+                    <div class="flex justify-between mt-1">
+                        <p class="err">Esai harus 300–500 kata.</p>
+                        <p id="hitung-esai" class="text-xs font-semibold text-gray-500 ml-auto">0 / 300–500 kata</p>
+                    </div>
+                </div>
+                <div>
+                    <label class="lbl req" for="motivasi">Motivasi mengikuti program (maks. 150 kata)</label>
+                    <textarea class="field" id="motivasi" name="motivasi" rows="5" required></textarea>
+                    <div class="flex justify-between mt-1">
+                        <p class="err">Motivasi wajib diisi, maksimal 150 kata.</p>
+                        <p id="hitung-motivasi" class="text-xs font-semibold text-gray-500 ml-auto">0 / 150 kata</p>
+                    </div>
+                </div>
+                <div>
+                    <label class="lbl req" for="action_project">Ide Action Project (maks. 150 kata)</label>
+                    <p class="hint mb-2">Setelah program, peserta menjalankan proyek kecil selama 30–90 hari. Apa yang ingin kamu kerjakan, di mana, dan bersama siapa?</p>
+                    <textarea class="field" id="action_project" name="action_project" rows="5" required></textarea>
+                    <div class="flex justify-between mt-1">
+                        <p class="err">Ide Action Project wajib diisi, maksimal 150 kata.</p>
+                        <p id="hitung-action" class="text-xs font-semibold text-gray-500 ml-auto">0 / 150 kata</p>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- 4. Konfirmasi -->
+            <fieldset class="space-y-5">
+                <legend class="font-serif text-2xl font-bold mb-1"><span class="text-src-gold">04</span> Konfirmasi</legend>
+                <div>
+                    <label class="lbl req" for="sumber">Dari mana kamu mengetahui program ini?</label>
+                    <select class="field" id="sumber" name="sumber" required>
+                        <option value="">Pilih salah satu</option>
+                        <option>Instagram SRC</option>
+                        <option>WhatsApp (grup/teman)</option>
+                        <option>Kampus / BEM / organisasi</option>
+                        <option>LinkedIn</option>
+                        <option>Website SRC</option>
+                        <option>Media / berita</option>
+                        <option>Lainnya</option>
+                    </select>
+                    <p class="err">Pilih salah satu.</p>
+                </div>
+                <div class="bg-src-gold-light/50 border border-src-gold/40 rounded-lg p-4 space-y-4">
+                    <label class="flex items-start gap-3 text-sm">
+                        <input type="checkbox" id="komitmen" name="komitmen" value="Ya" class="mt-1 accent-yellow-600 w-4 h-4" required>
+                        <span>Saya bersedia mengikuti <b>seluruh rangkaian kegiatan</b> selama 2 hari 1 malam, termasuk menginap dan kunjungan lapangan, bila dinyatakan lolos.</span>
+                    </label>
+                    <p class="err" data-for="komitmen">Centang pernyataan ini untuk melanjutkan.</p>
+                    <label class="flex items-start gap-3 text-sm">
+                        <input type="checkbox" id="persetujuan" name="persetujuan" value="Ya" class="mt-1 accent-yellow-600 w-4 h-4" required>
+                        <span>Saya menyatakan data yang saya isi benar, dan <b>menyetujui</b> PT Symphony Rengganis Konsultan memproses data pribadi saya untuk keperluan seleksi dan penyelenggaraan program ini, sesuai UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi. Data tidak akan dibagikan kepada pihak lain di luar keperluan program.</span>
+                    </label>
+                    <p class="err" data-for="persetujuan">Persetujuan pemrosesan data diperlukan.</p>
+                </div>
+            </fieldset>
+
+            <div id="pesan-error" class="hidden bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg p-4"></div>
+
+            <button id="tombol-kirim" type="submit" class="w-full bg-src-dark text-src-gold font-semibold text-lg py-4 rounded-lg hover:bg-black transition disabled:opacity-60">
+                Kirim pendaftaran <i class="fas fa-paper-plane ml-2"></i>
+            </button>
+            <p class="text-center text-xs text-gray-500">Periksa kembali isian sebelum mengirim. Data yang sudah terkirim tidak bisa diubah sendiri.</p>
+        </form>
+
+        <!-- Sukses -->
+        <div id="kotak-sukses" class="hidden bg-white rounded-xl shadow-sm border border-src-gold p-8 text-center">
+            <div class="w-16 h-16 mx-auto rounded-full bg-src-gold flex items-center justify-center mb-4"><i class="fas fa-check text-2xl text-src-dark"></i></div>
+            <h2 class="font-serif text-2xl font-bold mb-2">Pendaftaran terkirim</h2>
+            <p class="text-gray-700 mb-4">Terima kasih, <span id="nama-sukses" class="font-semibold"></span>. Pendaftaranmu sudah kami terima.</p>
+            <p id="id-sukses-wrap" class="inline-block bg-src-gold-light px-5 py-3 rounded-lg mb-4">Nomor pendaftaran: <b id="id-sukses"></b></p>
+            <p class="text-sm text-gray-600">Simpan nomor ini. Hasil seleksi akan diumumkan melalui email dan WhatsApp yang kamu daftarkan.</p>
+            <a href="index.html" class="inline-block mt-6 text-src-dark underline">Kembali ke beranda</a>
+        </div>
+
+        <!-- Tutup -->
+        <div id="kotak-tutup" class="hidden bg-white rounded-xl shadow-sm border border-gray-200 p-8 text-center">
+            <h2 class="font-serif text-2xl font-bold mb-2">Pendaftaran sudah ditutup</h2>
+            <p class="text-gray-700">Terima kasih atas minatmu. Ikuti <a href="https://instagram.com/symphonyrengganisconsultant" class="text-src-gold underline">Instagram SRC</a> untuk informasi batch berikutnya.</p>
+        </div>
+    </main>
+
+    <footer class="bg-src-dark text-gray-400 text-sm py-8 text-center px-4">
+        <p>Diselenggarakan oleh <span class="text-src-gold">PT Symphony Rengganis Konsultan</span> · Bandung, Jawa Barat</p>
+        <p class="mt-1">Pertanyaan: <a href="mailto:santriagung@srconsultant.solutions" class="text-src-gold hover:underline">santriagung@srconsultant.solutions</a></p>
+    </footer>
+
+<script>
+/* ================= PENGATURAN ================= */
+const CONFIG = {
+    // Tempel URL Web App dari Google Apps Script (berakhiran /exec)
+    SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbzGz2EaBb-W0ClU7emD0AHhDZZOOgaZ4AapffqWg9uebrEKokg3mgQPDN1OY5-FHlxm7w/exec',
+    // Batas pendaftaran, format 'YYYY-MM-DDTHH:MM' (WIB). Kosongkan '' bila belum ditentukan.
+    TUTUP: '',
+    USIA_MIN: 18, USIA_MAKS: 30,
+    ESAI_MIN: 300, ESAI_MAKS: 500,
+    MOTIVASI_MAKS: 150, ACTION_MAKS: 150
+};
+/* ============================================== */
+
+const KOTA = ['Kota Bandung','Kabupaten Bandung','Kabupaten Bandung Barat','Kota Cimahi','Kabupaten Sumedang','Kota Bekasi','Kabupaten Bekasi','Kota Bogor','Kabupaten Bogor','Kota Depok','Kabupaten Karawang','Kabupaten Purwakarta','Kabupaten Subang','Kabupaten Cianjur','Kota Sukabumi','Kabupaten Sukabumi','Kabupaten Garut','Kota Tasikmalaya','Kabupaten Tasikmalaya','Kota Banjar','Kabupaten Ciamis','Kabupaten Pangandaran','Kabupaten Kuningan','Kota Cirebon','Kabupaten Cirebon','Kabupaten Majalengka','Kabupaten Indramayu'];
+document.getElementById('daftar-kota').innerHTML = KOTA.map(k => `<option value="${k}">`).join('');
+
+const form = document.getElementById('form-daftar');
+const $ = id => document.getElementById(id);
+const hitungKata = s => (s.trim().match(/\S+/g) || []).length;
+
+function hitungUsia(tgl) {
+    if (!tgl) return null;
+    const lahir = new Date(tgl + 'T00:00:00'), kini = new Date();
+    let u = kini.getFullYear() - lahir.getFullYear();
+    const m = kini.getMonth() - lahir.getMonth();
+    if (m < 0 || (m === 0 && kini.getDate() < lahir.getDate())) u--;
+    return u;
+}
+
+// Pendaftaran ditutup?
+if (CONFIG.TUTUP) {
+    const batas = new Date(CONFIG.TUTUP + ':00+07:00');
+    const info = $('info-tutup');
+    info.textContent = 'Pendaftaran ditutup ' + batas.toLocaleString('id-ID', { dateStyle: 'full', timeStyle: 'short', timeZone: 'Asia/Jakarta' }) + ' WIB';
+    info.classList.remove('hidden');
+    if (new Date() > batas) { form.classList.add('hidden'); $('kotak-tutup').classList.remove('hidden'); }
+}
+
+// Status → tampilkan prodi
+form.querySelectorAll('input[name=status]').forEach(r => r.addEventListener('change', () => {
+    const mhs = form.status.value === 'Mahasiswa';
+    $('wrap-prodi').classList.toggle('hidden', !mhs);
+    $('prodi').required = mhs;
+    $('lbl-kampus').textContent = mhs ? 'Nama kampus' : 'Instansi / tempat kerja / komunitas';
+}));
+
+// Penghitung kata
+function pasangPenghitung(idField, idLabel, min, maks) {
+    const f = $(idField), l = $(idLabel);
+    const upd = () => {
+        const n = hitungKata(f.value);
+        l.textContent = min ? `${n} / ${min}–${maks} kata` : `${n} / ${maks} kata`;
+        const ok = n <= maks && (!min || n >= min);
+        l.className = 'text-xs font-semibold ml-auto ' + (n === 0 ? 'text-gray-500' : ok ? 'text-green-700' : 'text-red-600');
+    };
+    f.addEventListener('input', upd); upd();
+}
+pasangPenghitung('esai', 'hitung-esai', CONFIG.ESAI_MIN, CONFIG.ESAI_MAKS);
+pasangPenghitung('motivasi', 'hitung-motivasi', 0, CONFIG.MOTIVASI_MAKS);
+pasangPenghitung('action_project', 'hitung-action', 0, CONFIG.ACTION_MAKS);
+
+$('tgl_lahir').addEventListener('change', e => {
+    const u = hitungUsia(e.target.value);
+    $('usia-info').textContent = u === null ? '' : `Usia saat ini: ${u} tahun`;
+});
+
+// Validasi
+function tandai(el, salah) {
+    const box = el.closest('div');
+    el.classList && el.classList.toggle('invalid', salah);
+    const err = box && box.querySelector('.err');
+    if (err) err.classList.toggle('show', salah);
+}
+function tandaiGrup(nama, salah) {
+    const err = form.querySelector(`.err[data-for="${nama}"]`);
+    if (err) err.classList.toggle('show', salah);
+}
+
+function validasi() {
+    let pertama = null;
+    const gagal = (el) => { if (!pertama) pertama = el; };
+    const cekIsi = (id, syarat = v => v.trim() !== '') => {
+        const el = $(id); const salah = !syarat(el.value); tandai(el, salah); if (salah) gagal(el);
+    };
+    cekIsi('nama');
+    cekIsi('email', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()));
+    cekIsi('wa', v => /^(08|628|\+628)\d{7,12}$/.test(v.replace(/[\s-]/g, '')));
+    ['jk', 'status'].forEach(n => { const salah = !form[n].value; tandaiGrup(n, salah); if (salah) gagal(form.querySelector(`input[name=${n}]`)); });
+    cekIsi('tgl_lahir', v => { const u = hitungUsia(v); return u !== null && u >= CONFIG.USIA_MIN && u <= CONFIG.USIA_MAKS; });
+    cekIsi('domisili');
+    cekIsi('kampus');
+    if ($('prodi').required) cekIsi('prodi');
+    cekIsi('organisasi');
+    cekIsi('pengalaman');
+    cekIsi('cv', v => v.trim() === '' || /^https?:\/\/\S+\.\S+/.test(v.trim()));
+    cekIsi('judul_isu');
+    cekIsi('esai', v => { const n = hitungKata(v); return n >= CONFIG.ESAI_MIN && n <= CONFIG.ESAI_MAKS; });
+    cekIsi('motivasi', v => { const n = hitungKata(v); return n > 0 && n <= CONFIG.MOTIVASI_MAKS; });
+    cekIsi('action_project', v => { const n = hitungKata(v); return n > 0 && n <= CONFIG.ACTION_MAKS; });
+    cekIsi('sumber');
+    ['komitmen', 'persetujuan'].forEach(n => { const salah = !$(n).checked; tandaiGrup(n, salah); if (salah) gagal($(n)); });
+    if (pertama) { pertama.scrollIntoView({ behavior: 'smooth', block: 'center' }); pertama.focus({ preventScroll: true }); }
+    return !pertama;
+}
+
+// Kirim
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    $('pesan-error').classList.add('hidden');
+    if (!validasi()) return;
+
+    const btn = $('tombol-kirim');
+    btn.disabled = true; btn.innerHTML = 'Mengirim... <i class="fas fa-spinner fa-spin ml-2"></i>';
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    data.wa = data.wa.replace(/[\s-]/g, '').replace(/^\+/, '');
+    if (data.status !== 'Mahasiswa') data.prodi = '';
+    data.komitmen = 'Ya'; data.persetujuan = 'Ya';
+
+    try {
+        let hasil;
+        try {
+            const res = await fetch(CONFIG.SCRIPT_URL, { method: 'POST', body: JSON.stringify(data) });
+            hasil = await res.json();
+        } catch (errCors) {
+            // Cadangan bila respons diblokir browser: kirim tanpa membaca balasan
+            await fetch(CONFIG.SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(data) });
+            hasil = { ok: true, id: '' };
+        }
+        if (!hasil.ok) throw new Error(hasil.error || 'Pendaftaran gagal dikirim.');
+
+        $('nama-sukses').textContent = data.nama;
+        if (hasil.id) $('id-sukses').textContent = hasil.id; else $('id-sukses-wrap').classList.add('hidden');
+        form.classList.add('hidden');
+        $('kotak-sukses').classList.remove('hidden');
+        window.scrollTo({ top: $('kotak-sukses').offsetTop - 40, behavior: 'smooth' });
+    } catch (err) {
+        const box = $('pesan-error');
+        box.innerHTML = '<b>Gagal mengirim.</b> ' + (err.message || '') + ' Bila masalah berlanjut, hubungi panitia di santriagung@srconsultant.solutions.';
+        box.classList.remove('hidden');
+        btn.disabled = false; btn.innerHTML = 'Kirim pendaftaran <i class="fas fa-paper-plane ml-2"></i>';
+    }
+});
+</script>
+</body>
+</html>
